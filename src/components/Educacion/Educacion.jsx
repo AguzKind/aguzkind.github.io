@@ -6,34 +6,38 @@ const trabajos = [
       anios: "2022 - 2023",
         titulo: "Curso de React",
         lugar: "Udemy",
-        detalles: "Desarrollo de aplicaciones web con React (MERN)."
-        
+        detalles: "Desarrollo de aplicaciones web con React (MERN).",
+        linkCertificado: "#"
     },
     {
       anios: "2022 - 2023",
         titulo: "Curso de Angular",
         lugar: "Udemy",
-        detalles: "Desarrollo de aplicaciones web con Angular (MEAN)."
+        detalles: "Desarrollo de aplicaciones web con Angular (MEAN).",
+        linkCertificado: "#",
         
     },
     {
       anios: "2022 - 2023",
         titulo: "Formación Desarrollo Front-end",
         lugar: "Alura LATAM - Oracle Next Education",
-        detalles: "Curso remoto de Alura LATAM | ONE - ORACLE NEXT EDUATION. Formacion de desarrollo Front-End."
+        detalles: "Curso remoto de Alura LATAM | ONE - ORACLE NEXT EDUATION. Formacion de desarrollo Front-End.",
+        linkCertificado: "https://app.aluracursos.com/degree/certificate/b0062ca7-4316-4bae-a87c-c0d2cb33a22b"
         
     },
     {
       anios: "2017 - 2023",
         titulo: "Tecnicatura Superior en Análisis, Desarrollo y Programación de Aplicaciones",
         lugar: "Instituto Superior de Formación Docente y Técnica 93 'Arturo Umberto Illia'",
-        detalles: "Desarrollo de aplicaciones en C# y SQL. Programación orientada a objetos. Aplicaciones web. Front end y back end. Bases de datos."
+        detalles: "Desarrollo de aplicaciones en C# y SQL. Programación orientada a objetos. Aplicaciones web. Front end y back end. Bases de datos.",
+        linkCertificado: "#"
     },
     {
       anios: "2016",
         titulo: "F.C.E. - Cambridge English First Nivel B2",
         lugar: "University of Cambridge'",
-        detalles: "Examen aprobado de ingles Cambridge English First Nivel B2."
+        detalles: "Examen aprobado de ingles Cambridge English First Nivel B2.",
+        linkCertificado: "#"
     }
 ]
 
@@ -53,7 +57,8 @@ const Educacion = ({fondo, texto, info, certificados}) => {
           detalles={item.detalles} 
           texto={texto}
           info={info}
-          certificados={certificados}/>
+          certificados={certificados}
+          linkCertificado={item.linkCertificado}/>
         ))}
       </div>
       </div>
