@@ -2,8 +2,8 @@
 
 <h1 align="center"> Bienvenidos a la version V2 de mi Portfolio </h1>
 
-En esta oportunidad, el mismo lo realice con nuevas tecnologias y librerias, a modo de aprendizaje.
-Tarde mucho mas de lo que me hubiese gustado en realidad, pero por fin puedo decir que esta hecho (y full responsive)!
+En esta oportunidad, el mismo lo realicé con nuevas tecnologías y librerías, a modo de aprendizaje.
+Tardé mucho mas de lo que me hubiese gustado en realidad, pero por fín puedo decir que esta hecho (y full responsive)!
 
 
 # Tecnologias utilizadas:
