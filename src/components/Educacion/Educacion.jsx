@@ -13,7 +13,7 @@ const trabajos = [
       anios: "2022 - 2023",
         titulo: "Curso de Angular",
         lugar: "Udemy",
-        detalles: "Desarrollo de aplicaciones web con React (MEAN)."
+        detalles: "Desarrollo de aplicaciones web con Angular (MEAN)."
         
     },
     {
