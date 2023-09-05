@@ -4,7 +4,7 @@
 
 En esta oportunidad, el mismo lo realicé con nuevas tecnologías y librerías, a modo de aprendizaje.
 Tardé mucho mas de lo que me hubiese gustado en realidad, pero por fín puedo decir que esta hecho (y full responsive)!
-
+Podes acceder al mismo por este [link!](https://aguzkind.github.io/) (https://aguzkind.github.io/)
 
 # Tecnologias utilizadas:
 - [Vite](https://vitejs.dev/)
