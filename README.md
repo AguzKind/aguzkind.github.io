@@ -6,7 +6,7 @@ En esta oportunidad, el mismo lo realice con nuevas tecnologias y librerias, a m
 Tarde mucho mas de lo que me hubiese gustado en realidad, pero por fin puedo decir que esta hecho (y full responsive)!
 
 
-#Tecnologias utilizadas:
+# Tecnologias utilizadas:
 - [Vite](https://vitejs.dev/)
 - [React](https://react.dev/)
 - [Tailwind Css](https://tailwindcss.com/)
