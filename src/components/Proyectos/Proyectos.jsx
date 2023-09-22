@@ -12,6 +12,7 @@ import PacientesVet from '../../assets/pacientes_vet.png'
 import AgendaIglesia from '../../assets/programa_iglesia.png'
 import Tareas from '../../assets/tareas.png'
 import CrudEmpleados from '../../assets/crud_empleados.png'
+import ConversorCripto from '../../assets/conversor_cripto.png'
 
 const Proyectos = ({ texto, fondo }) => {
   return (
@@ -21,6 +22,7 @@ const Proyectos = ({ texto, fondo }) => {
           Proyectos
         </h1>
         <div className='grid sm:grid-cols-2 gap-12 md:ml-20'>
+          <ProyectosModelo img={ConversorCripto} titulo="Conversor Cripto" linkDemo={"https://conversor-cripto.netlify.app/"} linkRepo={"https://github.com/AguzKind/Conversor-cripto"} />
           <ProyectosModelo img={CrudEmpleados} titulo="Empleados CRUD" linkDemo={"https://github.com/AguzKind/CRUD-ASP.NET"} linkRepo={"https://github.com/AguzKind/CRUD-ASP.NET"} />
           <ProyectosModelo img={ABMKiosko} titulo="Kiosco CRUD" linkDemo={"https://github.com/AguzKind/ABMKiosko"} linkRepo={"https://github.com/AguzKind/ABMKiosko"} />
           <ProyectosModelo img={Agenda} titulo="Agenda CRUD" linkDemo={"https://github.com/AguzKind/AgendaBasica"} linkRepo={"https://github.com/AguzKind/AgendaBasica"} />
