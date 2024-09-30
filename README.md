@@ -5,8 +5,7 @@ Tardé mucho mas de lo que me hubiese gustado en realidad, pero por fín puedo d
 Podes acceder al mismo por este [link!](https://aguzkind.github.io/)
 
 # HACER:
-- Cambiar titulos a blanco en oscuro y en mayus.
-- Cambiar componente skills.
+- Rediseñar componente skills.
 
 # Tecnologias utilizadas:
 - [Vite](https://vitejs.dev/)
