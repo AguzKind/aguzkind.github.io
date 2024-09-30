@@ -5,9 +5,9 @@ const SobreMi = ({ fondo, texto }) => {
     return (
         <div id="sobremi" className={`${fondo}`}>
             <div className='md:ml-20'>
-                <div className='lg:flex flex-1 max-w-[678px] lg:max-w-[1000px] mx-auto'
+                <div className='lg:flex flex-1 max-w-[678px] lg:max-w-[1080px] mx-auto'
                     data-aos="zoom-in-left">
-                    <img src={AboutMe} alt="foto de perfil" className='w-full h-auto lg:w-auto' />
+                    <img src={AboutMe} alt="foto de perfil" className='w-full h-auto' />
                 </div>
                 <div className='container mx-auto mt-10 '>
                     <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-1'>
