@@ -11,12 +11,12 @@ import CrudEmpleados from '../../assets/crud_empleados.png'
 import ConversorCripto from '../../assets/conversor_cripto.png'
 import Portfoliov2 from '../../assets/portfoliov2.png'
 
-const Proyectos = ({ texto, fondo }) => {
+const Proyectos = ({ texto, fondo, titular }) => {
   return (
     <div className={`${fondo}`}>
       <div id="proyectos" className='max-w-[1040px] m-auto p-4 py-16'>
-        <h1 className='text-4xl font-bold text-center text-green-500 mb-7'>
-          Proyectos
+        <h1 className={`${titular} text-4xl font-bold text-center mb-7`}>
+          PROYECTOS
         </h1>
         <div className='grid sm:grid-cols-2 gap-12 md:ml-20'>
           <ProyectosModelo img={Portfoliov2} titulo="Portfolio" linkDemo={"https://conversor-cripto.netlify.app/"} linkRepo={"https://github.com/AguzKind/aguzkind.github.io"} />

@@ -14,7 +14,7 @@ import GitHubImg from '../../assets/skills/github.svg'
 import PostmanImg from '../../assets/skills/postman.svg'
 import Aos from 'aos'
 
-const Skills = ({ fondo }) => {
+const Skills = ({ fondo, titular }) => {
   const front = [
     {
       nombre: "React",
@@ -97,9 +97,8 @@ const Skills = ({ fondo }) => {
   return (
     <div id="skills" className={`${fondo}`}>
       <div className="max-w-[1040px] m-auto p-4 py-16">
-        <h1 className='text-4xl font-bold text-center text-green-500 mb-7'
-          data-aos="fade-up">
-          Skills
+        <h1 className={`${titular} text-4xl font-bold text-center mb-7`}>
+          SKILLS
         </h1>
       </div>
       <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-3 mx-auto gap-y-20 w-[80%] md:w-[90%]'>

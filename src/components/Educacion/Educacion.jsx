@@ -50,12 +50,12 @@ const trabajos = [
   }
 ]
 
-const Educacion = ({ fondo, texto, info, certificados }) => {
+const Educacion = ({ fondo, texto, info, certificados, titular }) => {
   return (
     <div className={`${fondo}`}>
       <div id="educacion" className="max-w-[1040px] m-auto p-4 py-16">
-        <h1 className='text-4xl font-bold text-center text-green-500 mb-7'>
-          Educación, Cursos y Certificados
+        <h1 className={`${titular} text-4xl font-bold text-center mb-7`}>
+          EDUCACIÓN, CURSOS Y CERTIFICADOS
         </h1>
         {trabajos.map((item, idx) => (
           <EducacionModelo

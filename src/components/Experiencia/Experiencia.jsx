@@ -20,12 +20,12 @@ const trabajos = [
   }
 ]
 
-const Experiencia = ({ fondo, texto, info }) => {
+const Experiencia = ({ fondo, texto, info, titular }) => {
   return (
     <div id="experiencia" className={`${fondo}`}>
       <div className="max-w-[1040px] m-auto p-4 py-16">
-        <h1 className='text-4xl font-bold text-center text-green-500 mb-7'>
-          Experiencia Laboral
+        <h1 className={`${titular} text-4xl font-bold text-center mb-7`}>
+          EXPERIENCIA LABORAL
         </h1>
         {trabajos.map((item, idx) => (
           <ExperienciaModelo

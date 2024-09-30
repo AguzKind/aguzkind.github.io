@@ -18,6 +18,7 @@ const Home = () => {
   const fondo = isNightMode ? "bg-gray-200" : "bg-gray-900"
   const fondosBotones = isNightMode ? "bg-white" : " bg-black"
   const iconoBotones = isNightMode ? "text-black" : " text-white"
+  const titular = isNightMode ? "text-green-500" : " text-white"
   const estiloTooltips = isNightMode ? "" : "text-black bg-white"
   const fondoHamburguer = isNightMode ? "bg-white/90" : "bg-black/90"
   const info = isNightMode ? "text-teal-600" : "text-orange-400"
@@ -39,20 +40,25 @@ const Home = () => {
         fondo={fondo}
         texto={iconoBotones}
         info={info}
+        titular={titular}
       />
       <Educacion
         fondo={fondo}
         texto={iconoBotones}
         info={info}
         certificados={certificados}
+        titular={titular}
       />
       <Skills
         fondo={fondo}
+        texto={iconoBotones}
+        titular={titular}
       />
 
       <Proyectos
         texto={iconoBotones}
         fondo={fondo}
+        titular={titular}
       />
 
       <SobreMi
@@ -64,6 +70,7 @@ const Home = () => {
         fondo={fondo}
         texto={iconoBotones}
         fondoBoton={fondosBotones}
+        titular={titular}
       />
 
       <Footer
