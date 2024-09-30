@@ -44,9 +44,9 @@ const Intro = ({ fondo, texto, fondoBoton }) => {
 
                         </p>
                         <div className=' flex lg:gap-3 sm:gap-1'>
-                            <div className='flex max-w-2 gap-x-1 items-center mb-12 mx-auto lg:mx-0 justify-center'>
+                            <div className='flex max-w-2 gap-x-1 items-center mb-12 mx-auto lg:ml-[250px] justify-center'>
                                 <a
-                                    href="https://drive.google.com/file/d/1PKVEtiU0rOa9e25tOvIXqSsm0Vlrp_zR/view"
+                                    href="https://drive.google.com/file/d/1PKVEtiU0rOa9e25tOvIXqSsm0Vlrp_zR/view?usp=drive_link"
                                     className={`${fondoBoton} inline-block rounded-full shadow-md shadow-green-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-green-500`}
                                     target='_blank'
                                 >
