@@ -38,19 +38,22 @@ const Intro = ({ fondo, texto, fondoBoton }) => {
 
                         </div>
                         <p className={`${texto} mb-8 w-[90%] mx-auto lg:mx-0 font-semibold text-[17px] md:w-[80%] sm:w-[70%] `}>
-                            Programo hace más de 2 años. Tengo conocimiento en los lenguajes de programación y frameworks más utilizados del mercado. Con compromiso, responsabilidad y flexibilidad, puedo llevar tu proyecto hacia adelante o unirme a tu grupo de trabajo fácilmente. ¡Conozcámonos y afrontemos un nuevo desafío juntos!
+                            Soy un desarrollador Fullstack apasionado por aprender nuevas tecnologías y enfrentar desafíos. Busco mi primera experiencia
+                            laboral formal para aplicar mis habilidades en desarrollo y contribuir a proyectos innovadores. Estoy comprometido con el
+                            crecimiento profesional y la mejora continua en un entorno dinámico y colaborativo.
+
                         </p>
                         <div className=' flex lg:gap-3 sm:gap-1'>
                             <div className='flex max-w-2 gap-x-1 items-center mb-12 mx-auto lg:mx-0 justify-center'>
-                                    <a
-                                        href="https://drive.google.com/file/d/1EBIN8U4RgLWJcVb4wMSbhrabspabGyhQ/view"
-                                        className={`${fondoBoton} inline-block rounded-full shadow-md shadow-green-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-green-500`}
-                                        target='_blank'
-                                    >
-                                        <section className={`${texto} flex items-center gap-2`}>
-                                            Currículum <FiDownload />
-                                        </section>
-                                    </a>
+                                <a
+                                    href="https://drive.google.com/file/d/1PKVEtiU0rOa9e25tOvIXqSsm0Vlrp_zR/view"
+                                    className={`${fondoBoton} inline-block rounded-full shadow-md shadow-green-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-green-500`}
+                                    target='_blank'
+                                >
+                                    <section className={`${texto} flex items-center gap-2`}>
+                                        Currículum <FiDownload />
+                                    </section>
+                                </a>
                                 <a
                                     href="https://www.linkedin.com/in/agustinmacoggi/"
                                     className={`${fondoBoton} inline-block rounded-full shadow-md shadow-green-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-green-500`}

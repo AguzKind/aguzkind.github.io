@@ -16,7 +16,7 @@ const ProyectosModelo = ({ img, titulo, linkRepo, linkDemo }) => {
           {titulo}
         </h3>
         <div className='flex flex-row justify-center align-middle gap-8'>
-        <a
+          {/* <a
           href={linkDemo}
           className='inline-block rounded-full shadow-md bg-black shadow-orange-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-orange-500 px-10'
           target='_blank'
@@ -24,16 +24,16 @@ const ProyectosModelo = ({ img, titulo, linkRepo, linkDemo }) => {
           <section className='text-white flex items-center gap-2'>
             Demo <TiExport />
           </section>
-        </a>
-        <a
-          href={linkRepo}
-          className=' inline-block rounded-full shadow-md bg-black shadow-orange-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-orange-500 px-10'
-          target='_blank'
-        >
-          <section className='text-white flex items-center gap-2'>
-            Repo <FaGithub />
-          </section>
-        </a>
+        </a> */}
+          <a
+            href={linkRepo}
+            className=' inline-block rounded-full shadow-md bg-black shadow-orange-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-orange-500 px-10'
+            target='_blank'
+          >
+            <section className='text-white flex items-center gap-2'>
+              Repo <FaGithub />
+            </section>
+          </a>
         </div>
       </div>
     </div>

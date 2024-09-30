@@ -2,45 +2,45 @@ import React from 'react'
 import ExperienciaModelo from "./ExperienciaModelo"
 
 const trabajos = [
-    {
-      anios: "2022 - 2023",
-        titulo: "Desarrollador Back-end",
-        lugar: "Acudir - Emergencias Medicas",
-        duracion: "1 año",
-        detalles: "Resolución y desarrollo de bugs, features con supervisión de lideres tecnicos para proyecto de sistemas de ambulancias, aplicación de videoconsultas y gestiones medicas (.NET Framework), con consumos a API's (.NET Core).",
-        aptitudes: "Desarrollo de API · Vue.js · .NET · C# · Trello · Jira · Git"
-    },
-    {
-      anios: "2019 - 2022",
-        titulo: "Desarrollador de software",
-        lugar: "TecnoFix S.A",
-        duracion: "3 años",
-        detalles: "Reinstalación de sistemas operativos, instalación de programas específicos, mejora de rendimiento, eliminación de virus. Desarrollo de software a medida.",
-        aptitudes: ".NET · Desarrollo Full Stack · Microsoft Access · Soporte técnico · Reparación de equipos informáticos · Windows · Mantenimiento y reparaciones · Desarrollo de software · ASP.NET · SQL · Desarrollo web · C# · Web Services API"
-    }
+  {
+    anios: "2022 - Act",
+    titulo: "Desarrollador Fullstack",
+    lugar: "Freelance",
+    duracion: "2 años",
+    detalles: "Mis tareas incluyen el relevo de requerimientos, diseño, desarrollo e implementación de sistemas que el cliente necesite, tanto web como de escritorio.",
+    aptitudes: "El sistema más significativo que realicé fue para un gimnasio ubicado en Alejandro Korn. Realicé el relevo de requerimientos junto al dueño del lugar, luego lo desarrollé e implementé en el establecimiento. El sistema permite gestionar a los clientes, sus ingresos y egresos mediante una tarjeta magnética, sus cuotas, los deudores, los empleados y el stock de productos a la venta dentro del gimnasio. El sistema fue realizado en Visual C# con base de datos Access y consultas SQL."
+  },
+  {
+    anios: "2021 - 2022",
+    titulo: "Soporte Técnico",
+    lugar: "TecnoFix S.A",
+    duracion: "1 año",
+    detalles: "Me desempeñé como Soporte Técnico en un negocio creado en conjunto con un amigo.",
+    aptitudes: "Mis responsabilidades incluían la reparación y armado de computadoras, venta de productos relacionados con la PC/gaming y soporte para eliminación de virus e instalación de programas específicos o sistemas operativos."
+  }
 ]
 
-const Experiencia = ({fondo, texto, info}) => {
+const Experiencia = ({ fondo, texto, info }) => {
   return (
-    <div id="experiencia"  className={`${fondo}`}>
-    <div className="max-w-[1040px] m-auto p-4 py-16">
-      <h1 className='text-4xl font-bold text-center text-green-500 mb-7'>
-        Experiencia Laboral
-      </h1>
-      {trabajos.map((item,idx) => (
+    <div id="experiencia" className={`${fondo}`}>
+      <div className="max-w-[1040px] m-auto p-4 py-16">
+        <h1 className='text-4xl font-bold text-center text-green-500 mb-7'>
+          Experiencia Laboral
+        </h1>
+        {trabajos.map((item, idx) => (
           <ExperienciaModelo
-          key={idx}
-          anios={item.anios}
-          titulo={item.titulo}
-          lugar={item.lugar}
-          duracion={item.duracion}
-          detalles={item.detalles}
-          aptitudes={"APTITUDES: " + item.aptitudes} 
-          texto={texto}
-          info={info}/>
+            key={idx}
+            anios={item.anios}
+            titulo={item.titulo}
+            lugar={item.lugar}
+            duracion={item.duracion}
+            detalles={item.detalles}
+            aptitudes={item.aptitudes}
+            texto={texto}
+            info={info} />
         ))}
       </div>
-      </div>
+    </div>
   )
 }
 

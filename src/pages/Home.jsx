@@ -35,29 +35,24 @@ const Home = () => {
         texto={iconoBotones}
         fondoBoton={fondosBotones}
       />
-
-      <Skills
-        fondo={fondo}
-      />
       <Experiencia
         fondo={fondo}
         texto={iconoBotones}
         info={info}
       />
-      <Proyectos
-        texto={iconoBotones}
-        fondo={fondo}
-      />
-
-
-
-
-
       <Educacion
         fondo={fondo}
         texto={iconoBotones}
         info={info}
         certificados={certificados}
+      />
+      <Skills
+        fondo={fondo}
+      />
+
+      <Proyectos
+        texto={iconoBotones}
+        fondo={fondo}
       />
 
       <SobreMi

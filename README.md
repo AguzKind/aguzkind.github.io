@@ -4,6 +4,10 @@ En esta oportunidad, el mismo lo realicé con nuevas tecnologías y librerías, 
 Tardé mucho mas de lo que me hubiese gustado en realidad, pero por fín puedo decir que esta hecho (y full responsive)!
 Podes acceder al mismo por este [link!](https://aguzkind.github.io/)
 
+# HACER:
+- Cambiar titulos a blanco en oscuro y en mayus.
+- Cambiar componente skills.
+
 # Tecnologias utilizadas:
 - [Vite](https://vitejs.dev/)
 - [React](https://react.dev/)
