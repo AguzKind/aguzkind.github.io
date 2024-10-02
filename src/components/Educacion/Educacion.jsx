@@ -46,7 +46,7 @@ const trabajos = [
     titulo: "F.C.E. - Cambridge English First Nivel B2",
     lugar: "University of Cambridge'",
     detalles: "Examen aprobado de ingles Cambridge English First Nivel B2.",
-    // linkCertificado: "#"
+    linkCertificado: "https://drive.google.com/file/d/1EoSGPN5QALFv5VweTon4QrHrX2_gafYM/view"
   }
 ]
 
