@@ -51,7 +51,7 @@ const Skills = ({ fondo, titular }) => {
     {
       nombre: ".NET",
       img: DotNetImg,
-      sombra: "shadow-purple-500",
+      sombra: "shadow-purple-700",
       link: "https://dotnet.microsoft.com/en-us/",
     },
     {
@@ -101,62 +101,41 @@ const Skills = ({ fondo, titular }) => {
           SKILLS
         </h1>
       </div>
-      <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-3 mx-auto gap-y-20 w-[80%] md:w-[90%]'>
-        <div className='mx-auto'>
-          <h1 className='text-2xl font-bold text-center text-green-500 mb-3'>
-            Front-End
-          </h1>
-          <div className='grid grid-cols-2 lg:grid-cols-3 gap-9 mx-auto border-green-500 border-dashed border-2 rounded-xl py-7 px-4'
-          >
-            {front.map((item, idx) => (
-              <SkillsModelo key={idx}
-                nombre={item.nombre}
-                img={item.img}
-                sombra={item.sombra}
-                link={item.link}
-              />
-            )
-            )}
-          </div>
-        </div>
-        <div className='mx-auto'>
-          <h1 className='text-2xl font-bold text-center text-green-500 mb-3'>
-            Back-End
-          </h1>
-          <div className='grid grid-cols-2 lg:grid-cols-3 gap-9 mx-auto border-green-500 border-dashed border-2 rounded-xl py-7 px-4'
-            data-aos="flip-up"
-            data-aos-duration="6000">
-            {back.map((item, idx) => (
-              <SkillsModelo key={idx}
-                nombre={item.nombre}
-                img={item.img}
-                sombra={item.sombra}
-                link={item.link}
-              />
-            )
-            )}
-          </div>
-        </div>
-        <div className='mx-auto'>
-          <h1 className='text-2xl font-bold text-center text-green-500 mb-3'>
-            Herramientas
-          </h1>
-          <div className='grid grid-cols-2 lg:grid-cols-3 gap-9 mx-auto border-green-500 border-dashed border-2 rounded-xl py-7 px-4'
-            data-aos="flip-up"
-            data-aos-duration="6000">
-            {herramientas.map((item, idx) => (
-              <SkillsModelo key={idx}
-                nombre={item.nombre}
-                img={item.img}
-                sombra={item.sombra}
-                link={item.link}
-              />
-            )
-            )}
-          </div>
-        </div>
+      <div className='lg:mx-[150px] ml-[15%] grid grid-rows-1 gap-8 lg:flex' data-aos="flip-up" data-aos-duration="6000">
+        {front.map((item, idx) => (
+          <SkillsModelo key={idx}
+            nombre={item.nombre}
+            img={item.img}
+            sombra={item.sombra}
+            link={item.link}
+          />
+        )
+        )}
       </div>
-
+      <div className='lg:mx-[150px] ml-[15%] grid grid-rows-1 gap-8 lg:flex mt-8'
+        data-aos="flip-up"
+        data-aos-duration="6000">
+        {back.map((item, idx) => (
+          <SkillsModelo key={idx}
+            nombre={item.nombre}
+            img={item.img}
+            sombra={item.sombra}
+            link={item.link}
+          />
+        )
+        )}
+      </div>
+      <div className='lg:mx-[150px] ml-[15%] grid grid-rows-1 gap-8 lg:flex mt-8' data-aos="flip-up" data-aos-duration="6000">
+        {herramientas.map((item, idx) => (
+          <SkillsModelo key={idx}
+            nombre={item.nombre}
+            img={item.img}
+            sombra={item.sombra}
+            link={item.link}
+          />
+        )
+        )}
+      </div>
     </div>
   )
 }

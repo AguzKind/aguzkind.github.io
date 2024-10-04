@@ -11,9 +11,9 @@ const ExperienciaModelo = ({ anios, titulo, lugar, duracion, detalles, aptitudes
           <span className='inline-block px-2 py-1 font-semibold text-white bg-green-700 rounded-full'>{anios}</span>
           <span className='text-lg font-semibold text-green-500 '>{titulo}</span>
           <b className={`${texto} sm:hidden`}>|</b>
-          <span className={`${info} my-1 text-sm font-semibold leading-none pt-0.5`}>{lugar}</span>
+          <span className={`${info} my-1 text-sm font-semibold leading-none pt-0.5 text-orange-400`}>{lugar}</span>
           <b className={`${texto}`}>|</b>
-          <span className={`${info} my-1 text-sm font-semibold leading-none pt-0.5 `}>{duracion}</span>
+          <span className={`${info} my-1 text-sm font-semibold leading-none pt-0.5 text-orange-400`}>{duracion}</span>
         </p>
         <p className={`${texto} my-2 text-base font-semibold`}>{detalles}</p>
         <p className={`${texto} my-2 text-base font-normal`}>{aptitudes}</p>

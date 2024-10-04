@@ -11,7 +11,7 @@ const ExperienciaModelo = ({ anios, titulo, lugar, detalles, texto, certificados
           <span className='inline-block px-2 py-1 font-semibold bg-green-700 rounded-full text-white'>{anios}</span>
           <span className='text-lg font-semibold text-green-500 '>{titulo}</span>
           <b>|</b>
-          <span className={`${info} my-1 text-sm font-semibold leading-none pt-0.5`}>{lugar}</span>
+          <span className={`${info} my-1 text-sm font-semibold leading-none pt-0.5 text-orange-400`}>{lugar}</span>
           <b>|</b>
           <a target='_blank' href={linkCertificado} className={`${certificados} my-1 text-sm font-semibold leading-none pt-0.5 cursor-pointer hover:scale-110 ease-in duration-200`}> Ver Certificado</a>
         </p>
