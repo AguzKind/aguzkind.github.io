@@ -10,6 +10,7 @@ import Tareas from '../../assets/tareas.png'
 import CrudEmpleados from '../../assets/crud_empleados.png'
 import ConversorCripto from '../../assets/conversor_cripto.png'
 import Portfoliov2 from '../../assets/portfoliov2.png'
+import GymTracker from '../../assets/gym_tracker.png'
 
 const Proyectos = ({ texto, fondo, titular }) => {
   return (
@@ -29,6 +30,7 @@ const Proyectos = ({ texto, fondo, titular }) => {
           <ProyectosModelo img={ConteoCaracteres} titulo="Conteo Caracteres" linkDemo={"https://github.com/AguzKind/ConteoCaracteres"} linkRepo={"https://github.com/AguzKind/ConteoCaracteres"} />
           <ProyectosModelo img={JuegoDados} titulo="Juego de dados" linkDemo={"https://github.com/AguzKind/JuegoDados"} linkRepo={"https://github.com/AguzKind/JuegoDados"} />
           <ProyectosModelo img={AgendaIglesia} titulo="Agenda Parroquia CRUD" linkRepo={"https://github.com/AguzKind/ProgramaIglesia"} linkDemo={"https://github.com/AguzKind/ProgramaIglesia"} />
+          <ProyectosModelo img={GymTracker} titulo="GYM Tracker" linkRepo={"https://github.com/AguzKind/GYM_Tracker"}></ProyectosModelo>
           {/* Borrar los linkRepo */}
         </div>
       </div>
