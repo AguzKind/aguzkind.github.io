@@ -15,7 +15,7 @@ const ExperienciaModelo = ({ anios, titulo, lugar, detalles, texto, certificados
           <b>|</b>
           <a target='_blank' href={linkCertificado} className={`${certificados} my-1 text-sm font-semibold leading-none pt-0.5 cursor-pointer hover:scale-110 ease-in duration-200`}> Ver Certificado</a>
         </p>
-        <p className={`${texto} my-2 text-base font-normal`}>{detalles}</p>
+        <p className={`${texto} whitespace-pre-line my-2 text-base font-normal`}>{detalles}</p>
       </li>
     </ol>
   )

@@ -6,7 +6,9 @@ const trabajos = [
     anios: "2017 - Act",
     titulo: "Tecnicatura Superior en Análisis, Desarrollo y Programación de Aplicaciones",
     lugar: "Instituto Superior de Formación Docente y Técnica N°93",
-    detalles: "En el instituto me enseñaron los conceptos de la programacion orientada a objetos y a utilizar Visual C#, SQL y React. Allí Desarrollé una aplicación para Windows tipo agenda para la Parroquia de San Vicente, con posibilidad de agendar horarios y días, tanto para la iglesia como para el SUM que la misma posee. También permite administrar las citas y los organizadores. Esta aplicación fue realizada en Visual C# MVC y base de datos de Access con consultas SQL. Tambien desarrollé una aplicación web similar a Lotería Nacional como proyecto de aprobación de examen final de la materia “Programación Web”. La misma permite a los usuarios apostar y elegir los números, qué tipo de apuesta y en qué pozo jugar. Además, permite a los administradores administrar la página, los pozos, los juegos y las jugadas. Por último, posee un login. La aplicación fue desarrollada en ASP.NET con base de datos y consultas SQL.",
+    detalles: `Actualmente curso el último año de la Tecnicatura Superior en Análisis, Desarrollo y Programación de Aplicaciones, donde he adquirido conocimientos en desarrollo de aplicaciones en .NET y SQL, programación orientada a objetos (POO), y la implementación de la arquitectura MVC. Manejo tecnologías tanto de Front-End como de Back-End, y tengo experiencia en el desarrollo bases de datos. Utilizo Git para control de versiones en proyectos colaborativos.
+
+A nivel de habilidades blandas, destaco que adquirí la capacidad de resolución de problemas mediante enfoques estructurados, y adaptabilidad para aprender nuevas tecnologías rápidamente. También tengo experiencia trabajando en equipos multidisciplinarios, con un fuerte enfoque en la colaboración y el manejo del tiempo para cumplir con plazos ajustados. Mi capacidad de pensamiento crítico me permite optimizar soluciones y tomar decisiones informadas en cada fase del desarrollo.`,
     //linkCertificado: "#"
   },
   {
@@ -37,7 +39,11 @@ const trabajos = [
     anios: "2022 - 2023",
     titulo: "Formación Desarrollo Front-end",
     lugar: "Alura LATAM - Oracle Next Education",
-    detalles: "Curso remoto de Alura LATAM | ONE - ORACLE NEXT EDUATION. Formacion de desarrollo Front-End.",
+    detalles: `Curso completado en modalidad remota a través de Alura LATAM | ONE - ORACLE NEXT EDUCATION, enfocado en el desarrollo Front-End. Durante la formación, adquirí competencias en HTML5, CSS y Javascript para crear interfaces web dinámicas y responsivas. Además, profundicé en el uso de frameworks y herramientas como React, Bootstrap y TailwindCSS para optimizar el desarrollo y diseño de aplicaciones web modernas.
+
+También me especialicé en control de versiones con GitHub, utilizando esta herramienta para gestionar y coordinar el código en proyectos colaborativos, garantizando un flujo de trabajo organizado y eficiente.
+
+Este curso me permitió consolidar tanto habilidades técnicas esenciales para el desarrollo web, como el trabajo en equipo y la colaboración remota, preparándome para integrarme en entornos de desarrollo ágiles y dinámicos.`,
     linkCertificado: "https://app.aluracursos.com/degree/certificate/b0062ca7-4316-4bae-a87c-c0d2cb33a22b"
 
   },
@@ -45,7 +51,7 @@ const trabajos = [
     anios: "2016",
     titulo: "F.C.E. - Cambridge English First Nivel B2",
     lugar: "University of Cambridge'",
-    detalles: "Examen aprobado de ingles Cambridge English First Nivel B2.",
+    detalles: `Aprobé el Examen de Inglés Cambridge F.C.E (First Certificate in English), obteniendo el nivel B2 según el Marco Común Europeo de Referencia para las Lenguas. Este nivel certifica una competencia intermedia-alta en inglés, incluyendo habilidades sólidas en comprensión oral y escrita, así como en la expresión tanto escrita como hablada. Puedo comunicarme de manera efectiva en situaciones cotidianas y profesionales, además de comprender textos y conversaciones complejas.`,
     linkCertificado: "https://drive.google.com/file/d/1EoSGPN5QALFv5VweTon4QrHrX2_gafYM/view"
   }
 ]

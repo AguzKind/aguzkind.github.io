@@ -7,8 +7,21 @@ const trabajos = [
     titulo: "Desarrollador Fullstack",
     lugar: "Freelance",
     duracion: "2 años",
-    detalles: "Mis tareas incluyen el relevo de requerimientos, diseño, desarrollo e implementación de sistemas que el cliente necesite, tanto web como de escritorio.",
-    aptitudes: "El sistema más significativo que realicé fue para un gimnasio ubicado en Alejandro Korn. Realicé el relevo de requerimientos junto al dueño del lugar, luego lo desarrollé e implementé en el establecimiento. El sistema permite gestionar a los clientes, sus ingresos y egresos mediante una tarjeta magnética, sus cuotas, los deudores, los empleados y el stock de productos a la venta dentro del gimnasio. El sistema fue realizado en Visual C# con base de datos Access y consultas SQL."
+    detalles: `Mis Principales responsabilidades son:
+- Relevar y documentar requerimientos funcionales y no funcionales en reuniones con stakeholders.
+- Analizar, diseñar y proponer soluciones técnicas alineadas a las necesidades del cliente.
+- Desarrollar e implementar aplicaciones siguiendo las mejores prácticas de programación y patrones de diseño.
+- Gestionar bases de datos, desde la creación de tablas hasta la optimización de consultas y generación de reportes.
+- Asegurar la correcta integración entre las diferentes capas del software (UI, lógica de negocio y acceso a datos).
+- Documentar y capacitar a los usuarios finales en el uso eficiente de las aplicaciones desarrolladas.`,
+
+    aptitudes: `\nSoftwares mas relevantes:
+
+Aplicación de agenda para Parroquia San Vicente: Responsable del análisis de necesidades y expectativas del cliente, diseño de la arquitectura del sistema, y desarrollo de una aplicación de gestión de actividades y eventos utilizando Visual C# y .NET MVC. Base de datos gestionada en Microsoft Access con consultas SQL para la extracción y manipulación de datos.
+
+Desarrollo de una plataforma web de lotería virtual: En colaboración con Lotería Nacional y como parte de un proyecto académico, realicé el diseño funcional, desarrollo backend en C# y ASP.NET, y la implementación de la base de datos SQL para simular una lotería virtual, asegurando integridad de los datos y cumplimiento de normativas del sector.
+
+Sistema de gestión administrativa para gimnasio: Realicé un análisis exhaustivo de los flujos de trabajo y las necesidades operativas del cliente, diseñé la estructura de datos y desarrollé un software que facilita la gestión de clientes, empleados, y el control de acceso al establecimiento. El sistema fue implementado en Visual C# con .NET MVC, utilizando Microsoft Access para el almacenamiento de datos y consultas SQL para generar reportes de uso y control.`
   },
   {
     anios: "2021 - 2022",
@@ -16,7 +29,17 @@ const trabajos = [
     lugar: "TecnoFix S.A",
     duracion: "1 año",
     detalles: "Me desempeñé como Soporte Técnico en un negocio creado en conjunto con un amigo.",
-    aptitudes: "Mis responsabilidades incluían la reparación y armado de computadoras, venta de productos relacionados con la PC/gaming y soporte para eliminación de virus e instalación de programas específicos o sistemas operativos."
+    aptitudes: `Era el Responsable del ensamblaje completo de hardware, incluyendo selección de componentes (procesadores, tarjetas madre, memorias, discos duros, fuentes de poder, etc), garantizando la compatibilidad y el rendimiento óptimo de cada equipo. A lo largo del tiempo, ensamblé más de 20 equipos personalizados para clientes particulares.
+
+    Implementé y configuré sistemas operativos (Windows, Linux, etc.) adaptados a las necesidades del usuario. Optimizaba la instalación mediante la configuración de particiones, controladores y actualizaciones de software. También realicé la instalación y configuración de programas específicos (MS Office, software de diseño, antivirus, etc), asegurándome de que fueran compatibles con el hardware y requerimientos del usuario. También brindaba asesoría sobre el uso eficiente del software y mejores prácticas para su mantenimiento.
+
+    Diagnostiqué cuellos de botella de rendimiento en equipos, aplicando mejoras como actualizaciones de hardware, optimización del sistema operativo, gestión de recursos y limpieza de archivos innecesarios. Logré una mejora de rendimiento de hasta un 40% en algunos casos mediante técnicas de optimización.
+
+    Realicé análisis exhaustivos de detección de malware del sistema para eliminarlos, que comprometían el rendimiento o la seguridad de los equipos. Implementé medidas de seguridad preventivas como la instalación de software antivirus y configuraciones de seguridad adicionales, disminuyendo en un 80% las reincidencias de infecciones.
+
+    Implementé planes de mantenimiento regular que incluían limpieza de hardware, actualización de drivers, parches de seguridad y verificación de integridad de sistemas, aumentando la vida útil de los equipos en un casi 50%.
+
+    Por último, brindé asesoría en la compra de hardware y software. Ofrecía recomendaciones personalizadas a los clientes sobre actualizaciones de hardware y software, optimizando su inversión tecnológica con base en sus necesidades y presupuestos.`
   }
 ]
 

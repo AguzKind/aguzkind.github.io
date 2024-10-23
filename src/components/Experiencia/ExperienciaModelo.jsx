@@ -15,8 +15,8 @@ const ExperienciaModelo = ({ anios, titulo, lugar, duracion, detalles, aptitudes
           <b className={`${texto}`}>|</b>
           <span className={`${info} my-1 text-sm font-semibold leading-none pt-0.5 text-orange-400`}>{duracion}</span>
         </p>
-        <p className={`${texto} my-2 text-base font-semibold`}>{detalles}</p>
-        <p className={`${texto} my-2 text-base font-normal`}>{aptitudes}</p>
+        <p className={`${texto} whitespace-pre-line my-2 text-base font-semibold`}>{detalles}</p>
+        <p className={`${texto} whitespace-pre-line my-2 text-base font-normal`}>{aptitudes}</p>
       </li>
     </ol>
   )
