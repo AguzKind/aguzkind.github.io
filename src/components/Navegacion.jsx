@@ -47,7 +47,7 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
                         font-roboto`}>
                             <AiFillCode size={20}
                                 className={iconoBotones} />
-                            <span className={`${iconoBotones} pl-4`}>Skills</span>
+                            <span className={`${iconoBotones} pl-4`}>Tecnologías</span>
                         </a>
                         <a onClick={handleNav} href="#proyectos" className={`${fondosBotones} w-[75%] flex justify-center items-center rounded-full shadow-md shadow-green-500 m-3 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-green-500 font-bold
                         font-roboto`}>
@@ -112,7 +112,7 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
                                 className={iconoBotones} />
                         </a>
                     </ Tooltip>
-                    <Tooltip content="Skills" placement="right" animate={{
+                    <Tooltip content="Tecnologías" placement="right" animate={{
                         mount: { scale: 1, x: 0 },
                         unmount: { scale: 0, x: -25 },
                     }}

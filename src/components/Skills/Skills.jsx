@@ -6,12 +6,15 @@ import TypescriptImg from '../../assets/skills/typescript.svg'
 import TailwindImg from '../../assets/skills/tailwind.svg'
 import BootstrapImg from '../../assets/skills/bootstrap.svg'
 import DotNetImg from '../../assets/skills/Dot-net.svg'
-import JavaImg from '../../assets/skills/java.svg'
+import AWSImg from '../../assets/skills/aws.webp'
+import EFCoreImg from '../../assets/skills/efcore.png'
 import SqlImg from '../../assets/skills/sql.svg'
-import TrelloImg from '../../assets/skills/trello.svg'
 import JiraImg from '../../assets/skills/jira.svg'
 import GitHubImg from '../../assets/skills/github.svg'
 import PostmanImg from '../../assets/skills/postman.svg'
+import CodeImg from '../../assets/skills/visualcode.png'
+import StudioImg from '../../assets/skills/visual2022.png'
+
 import Aos from 'aos'
 
 const Skills = ({ fondo, titular }) => {
@@ -55,25 +58,25 @@ const Skills = ({ fondo, titular }) => {
       link: "https://dotnet.microsoft.com/en-us/",
     },
     {
-      nombre: "Java",
-      img: JavaImg,
-      sombra: "shadow-orange-500",
-      link: "https://www.java.com/es/",
+      nombre: "EF Core",
+      img: EFCoreImg,
+      sombra: "shadow-pink-500",
+      link: "https://learn.microsoft.com/en-us/ef/",
     },
     {
-      nombre: "SQL Server",
+      nombre: "MS SQL Server",
       img: SqlImg,
       sombra: "shadow-yellow-500",
       link: "https://www.microsoft.com/en-us/sql-server",
     },
+    {
+      nombre: "AWS",
+      img: AWSImg,
+      sombra: "shadow-orange-500",
+      link: "https://aws.amazon.com/es/",
+    },
   ]
   const herramientas = [
-    {
-      nombre: "Trello",
-      img: TrelloImg,
-      sombra: "shadow-blue-500",
-      link: "https://trello.com/",
-    },
     {
       nombre: "Jira",
       img: JiraImg,
@@ -92,13 +95,25 @@ const Skills = ({ fondo, titular }) => {
       sombra: "shadow-orange-500",
       link: "https://www.postman.com/",
     },
+    {
+      nombre: "Visual Studio Code",
+      img: CodeImg,
+      sombra: "shadow-blue-500",
+      link: "https://code.visualstudio.com/",
+    },
+    {
+      nombre: "Visual Studio 2022",
+      img: StudioImg,
+      sombra: "shadow-purple-500",
+      link: "https://visualstudio.microsoft.com/es/vs/",
+    },
   ]
   Aos.init();
   return (
     <div id="skills" className={`${fondo}`}>
       <div className="max-w-[1040px] m-auto p-4 py-16">
         <h1 className={`${titular} text-4xl font-bold text-center mb-7`}>
-          SKILLS
+          TECNOLOGÍAS
         </h1>
       </div>
       <div className='lg:mx-[150px] ml-[15%] grid grid-rows-1 gap-8 lg:flex' data-aos="flip-up" data-aos-duration="6000">

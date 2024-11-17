@@ -38,9 +38,7 @@ const Intro = ({ fondo, texto, fondoBoton }) => {
 
                         </div>
                         <p className={`${texto} mb-8 w-[90%] mx-auto lg:mx-0 font-semibold text-[17px] md:w-[80%] sm:w-[70%] `}>
-                            Soy un desarrollador Fullstack apasionado por aprender nuevas tecnologías y enfrentar desafíos. Busco mi primera experiencia
-                            laboral formal para aplicar mis habilidades en desarrollo y contribuir a proyectos innovadores. Estoy comprometido con el
-                            crecimiento profesional y la mejora continua en un entorno dinámico y colaborativo.
+                            Soy un desarrollador Fullstack apasionado por aprender nuevas tecnologías y enfrentar desafíos. Mi objetivo es aportar mis conocimientos y habilidades en el desarrollo de soluciones innovadoras que generen impacto. Estoy comprometido con el crecimiento profesional, la mejora continua y el trabajo en equipo en entornos dinámicos y colaborativos.
 
                         </p>
                         <div className=' flex lg:gap-3 sm:gap-1'>
