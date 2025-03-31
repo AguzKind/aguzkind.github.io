@@ -69,6 +69,7 @@ const Experiencia = ({ fondo, texto, info, titular }) => {
             aptitudes={item.aptitudes}
             texto={texto}
             info={info} />
+          /* trying somehting */
         ))}
       </div>
     </div>
