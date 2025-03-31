@@ -6,7 +6,7 @@ const trabajos = [
     anios: "2024 - Act",
     titulo: "Desarrollador Fullstack",
     lugar: "TogetherDevs",
-    duracion: "1 mes",
+    duracion: "6 meses",
     detalles: `En TogetherDevs, contribuyo al desarrollo estratégico de productos digitales que impulsan el éxito de emprendedores, startups y empresas. Formo parte del equipo encargado de transformar ideas en experiencias digitales de alto impacto, desarrollando soluciones innovadoras y escalables.`,
     aptitudes: `Durante mi rol, estoy ampliado mis conocimientos técnicos trabajando con tecnologías de vanguardia como .NET 8, Entity Framework Core, PostgreSQL, React y AWS, aplicándolos en la creación y mantenimiento de APIs robustas, funcionalidades eficientes y entornos en la nube. Mi aporte se centra en ofrecer soluciones técnicas de calidad que se alineen con los objetivos estratégicos de los clientes, colaborando en un entorno dinámico y orientado a resultados.`
   },
