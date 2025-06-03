@@ -37,14 +37,16 @@ const Intro = ({ fondo, texto, fondoBoton }) => {
                             />
 
                         </div>
-                        <p className={`${texto} mb-8 w-[90%] mx-auto lg:mx-0 font-semibold text-[17px] md:w-[80%] sm:w-[70%] `}>
-                            Soy un desarrollador Fullstack apasionado por aprender nuevas tecnologías y enfrentar desafíos. Mi objetivo es aportar mis conocimientos y habilidades en el desarrollo de soluciones innovadoras que generen impacto. Estoy comprometido con el crecimiento profesional, la mejora continua y el trabajo en equipo en entornos dinámicos y colaborativos.
+                        <div className={`${texto} mb-8 w-[90%] mx-auto lg:mx-0 text-[17px] md:w-[80%] sm:w-[70%] text-left`}>
+                            <p className='font-semibold'>Desarrollador Fullstack con experiencia internacional, especializado en React, .NET y SQL.</p>
+                            <p> Estoy enfocado en seguir creciendo profesionalmente y aportar valor en nuevos entornos donde pueda aplicar mis conocimientos en desarrollo, asumir nuevos desafíos y continuar aprendiendo. </p>
+                            <p>Me comprometo con la creación de soluciones escalables, eficientes e innovadoras.</p>
 
-                        </p>
+                        </div>
                         <div className=' flex lg:gap-3 sm:gap-1'>
                             <div className='flex max-w-2 gap-x-1 items-center mb-12 mx-auto lg:ml-[250px] justify-center'>
                                 <a
-                                    href="https://drive.google.com/file/d/1DCddw1nXttjFkYUtomBMmHgw-Ex2ssiC/view"
+                                    href="https://drive.google.com/file/d/1kGuaKYQboCR-axEEJEGnwqXgUujW-B4t/view?usp=drive_link"
                                     className={`${fondoBoton} inline-block rounded-full shadow-md shadow-green-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-green-500`}
                                     target='_blank'
                                 >

@@ -12,11 +12,11 @@ const trabajos = [
     Esta experiencia fortaleció mis habilidades técnicas y comunicacionales, y consolidó mi capacidad para adaptarme rápidamente a proyectos desafiantes en contextos profesionales internacionales.`
   },
   {
-    anios: "2022 - Act",
+    anios: "2022 - 2024",
     titulo: "Desarrollador Fullstack",
     lugar: "Freelance",
     duracion: "2 años",
-    detalles: `Mis Principales responsabilidades son:
+    detalles: `Mis Principales responsabilidades fueron:
 - Relevar y documentar requerimientos funcionales y no funcionales en reuniones con stakeholders.
 - Analizar, diseñar y proponer soluciones técnicas alineadas a las necesidades del cliente.
 - Desarrollar e implementar aplicaciones siguiendo las mejores prácticas de programación y patrones de diseño.

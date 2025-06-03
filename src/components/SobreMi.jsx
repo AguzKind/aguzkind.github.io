@@ -16,7 +16,7 @@ const SobreMi = ({ fondo, texto }) => {
 
                             <p className={`${texto} mx-14 lg:mx-auto mb-8 font-semibold text-[16px] text-left w-[80%]`}>
                                 Mi nombre completo es Agustín Nicolás Macoggi. Vivo en el partido de San Vicente, provincia de Buenos Aires, Argentina. <br />
-                                Soltero, con 25 años y tengo una gata, se llama Asa. <br />
+                                Soltero, con 26 años y tengo una gata, se llama Asa. <br />
                                 <br />
                                 Desde muy chico juego a videojuegos, y en mi adolescencia se despertó esa curiosidad de: '¿Cómo hacen para que esto funcione?'. <br />
                                 A los 18 años, supe lo que quería hacer: Hacer que desde una idea esta se termine transformándose en una página web o en un programa.
@@ -26,7 +26,7 @@ const SobreMi = ({ fondo, texto }) => {
                                 <br />
                                 Aspiro a trabajar en lugares donde valoren a las personas, donde me den nuevas herramientas que fortalezcan el crecimiento profesional y personal. Me interesa colaborar con otros y participar en equipos de trabajo donde abunde un ambiente agradable y productivo.<br />
                                 <br />
-                                Para finalizar, te agradezco mucho el tiempo que te tomaste para pasar por acá. Si te gusta mi perfil o el mismo se adecua a lo que busca tu empresa, no dudes en enviarme un correo o contactarme por LinkedIn. Te mando un saludo y <span className='italic text-green-500'>to the infinity, and beyond.</span>
+                                Para finalizar, te agradezco mucho el tiempo que te tomaste para pasar por acá. Si te gusta mi perfil y el mismo se adecua a lo que buscas vos o tu empresa, no dudes en enviarme un correo, contactarme por LinkedIn o llenar el formulario de abajo. Te mando un saludo y <span className='italic text-green-500'>to the infinity, and beyond.</span>
                             </p>
                         </div>
                     </div>

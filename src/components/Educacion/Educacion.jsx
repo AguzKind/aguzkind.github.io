@@ -36,6 +36,14 @@ A nivel de habilidades blandas, destaco que adquirí la capacidad de resolución
 
   },
   {
+    anios: "En curso...",
+    titulo: "Curso AWS (DVA-CO2)",
+    lugar: "Udemy",
+    detalles: "Curso de preparación para la certificación AWS Certified Developer Associate (DVA-CO2)",
+    //linkCertificado: "#",
+
+  },
+  {
     anios: "2022 - 2023",
     titulo: "Formación Desarrollo Front-end",
     lugar: "Alura LATAM - Oracle Next Education",
