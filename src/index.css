@@ -1,37 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-html,body
-{
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 7px;
-    height: 80px;
+  width: 7px;
+  height: 80px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222A35;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1ba111;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #626970;
+}
+
+/* Change font on titles */
+h1,
+h2,
+h3,
+h4,
+h5,
+.tecnologias {
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+/* Animation */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
   }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background:#222A35;
+
+  to {
+    opacity: 1;
   }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #1ba111;
-    border-radius: 6px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #626970;
-  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-in-out;
+}

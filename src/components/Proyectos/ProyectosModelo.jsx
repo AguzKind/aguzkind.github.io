@@ -1,42 +1,39 @@
-import React from 'react'
-import Aos from 'aos'
-import { motion } from 'framer-motion'
-import { TiExport } from 'react-icons/ti'
-import { FaGithub } from 'react-icons/fa'
+import { GiClick } from "react-icons/gi";
 
-const ProyectosModelo = ({ img, titulo, linkRepo, linkDemo }) => {
+
+const ProyectosModelo = ({ img, titulo, onClick }) => {
   return (
     <div
       data-aos="fade-up"
       data-aos-duration="2000"
-      className='bg-[#077187] relative flex items-center justify-center h-auto w-full shadow-md shadow-orange-500 rounded-xl group transition ease-in-out duration-300'>
-      <img src={img} alt="/" className='rounded-xl group-hover:opacity-5 ' />
-      <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-        <h3 className='text-white text-2xl font-bold tracking-wider text-center'>
-          {titulo}
-        </h3>
-        <div className='flex flex-row justify-center align-middle gap-8'>
-          {/* <a
-          href={linkDemo}
-          className='inline-block rounded-full shadow-md bg-black shadow-orange-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-orange-500 px-10'
-          target='_blank'
-        >
-          <section className='text-white flex items-center gap-2'>
-            Demo <TiExport />
-          </section>
-        </a> */}
-          <a
-            href={linkRepo}
-            className=' inline-block rounded-full shadow-md bg-black shadow-orange-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-orange-500 px-10'
-            target='_blank'
-          >
-            <section className='text-white flex items-center gap-2'>
-              Repo <FaGithub />
-            </section>
-          </a>
+      className='relative aspect-video w-full shadow-md shadow-orange-500 rounded-xl cursor-pointer overflow-hidden group'
+      onClick={onClick}
+    >
+      {/* Imagen */}
+      <img
+        src={img}
+        alt={titulo}
+        className='w-full h-full object-contain transform transition-transform duration-300 group-hover:scale-105'
+      />
+
+      {/* Overlay en hover */}
+      <div
+        className='absolute inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'
+        style={{
+          textShadow:
+            '2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000',
+        }}
+      >
+        <h1 className='text-white text-5xl font-bold mb-2 uppercase'>{titulo}</h1>
+        <div className="text-white text-3xl flex flex-row gap-3">
+          <GiClick />
+          <p className='text-white text-xl'> Click para ver detalles</p>
+
         </div>
+
       </div>
     </div>
-  )
-}
-export default ProyectosModelo
+  );
+};
+
+export default ProyectosModelo;

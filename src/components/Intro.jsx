@@ -43,36 +43,34 @@ const Intro = ({ fondo, texto, fondoBoton }) => {
                             <p>Me comprometo con la creación de soluciones escalables, eficientes e innovadoras.</p>
 
                         </div>
-                        <div className=' flex lg:gap-3 sm:gap-1'>
-                            <div className='flex max-w-2 gap-x-1 items-center mb-12 mx-auto lg:ml-[250px] justify-center'>
-                                <a
-                                    href="https://drive.google.com/file/d/1kGuaKYQboCR-axEEJEGnwqXgUujW-B4t/view?usp=drive_link"
-                                    className={`${fondoBoton} inline-block rounded-full shadow-md shadow-green-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-green-500`}
-                                    target='_blank'
-                                >
-                                    <section className={`${texto} flex items-center gap-2`}>
-                                        Currículum <FiDownload />
-                                    </section>
-                                </a>
-                                <a
-                                    href="https://www.linkedin.com/in/agustinmacoggi/"
-                                    className={`${fondoBoton} inline-block rounded-full shadow-md shadow-green-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-green-500`}
-                                    target='_blank'
-                                >
-                                    <section className={`${texto} flex items-center gap-2`}>
-                                        LinkedIn <FaLinkedin />
-                                    </section>
-                                </a>
-                                <a
-                                    href="https://github.com/AguzKind"
-                                    className={`${fondoBoton} inline-block rounded-full shadow-md shadow-green-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-green-500 `}
-                                    target='_blank'
-                                >
-                                    <section className={`${texto} flex items-center gap-2`}>
-                                        GitHub <FaGithub />
-                                    </section>
-                                </a>
-                            </div>
+                        <div className='flex flex-col md:flex-row max-w-2 gap-x-1 gap-y-4 items-center mb-12 mx-auto lg:ml-[250px] justify-center'>
+                            <a
+                                href="https://drive.google.com/file/d/1kGuaKYQboCR-axEEJEGnwqXgUujW-B4t/view?usp=drive_link"
+                                className={`${fondoBoton} w-[400px] md:w-auto rounded-full shadow-md shadow-green-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-green-500 flex items-center justify-center gap-2 text-lg`}
+                                target='_blank'
+                            >
+                                <section className={`${texto} flex items-center gap-2`}>
+                                    Currículum <FiDownload />
+                                </section>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/agustinmacoggi/"
+                                className={`${fondoBoton} w-[400px] md:w-auto rounded-full shadow-md shadow-green-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-green-500 flex items-center justify-center gap-2 text-lg`}
+                                target='_blank'
+                            >
+                                <section className={`${texto} flex items-center gap-2`}>
+                                    LinkedIn <FaLinkedin />
+                                </section>
+                            </a>
+                            <a
+                                href="https://github.com/AguzKind"
+                                className={`${fondoBoton} w-[400px] md:w-auto rounded-full shadow-md shadow-green-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-green-500 flex items-center justify-center gap-2 text-lg`}
+                                target='_blank'
+                            >
+                                <section className={`${texto} flex items-center gap-2`}>
+                                    GitHub <FaGithub />
+                                </section>
+                            </a>
                         </div>
                     </div>
                     {/*IMAGEN*/}
