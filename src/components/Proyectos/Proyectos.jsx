@@ -75,8 +75,8 @@ const Proyectos = ({ texto, fondo, titular }) => {
             <AiOutlineClose size={24} />
           </button>
         </DialogHeader>
-        <DialogBody>
-          <div className={`${texto} flex flex-col items-center`}>
+        <DialogBody className='overflow-y-auto max-h-[80vh] px-4'>
+          <div className={`${texto} flex flex-col items-center `}>
             <div className="flex justify-center items-center mb-6 px-4">
               <div className="max-w-[800px] max-h-[70vh] w-full h-full">
                 <img
