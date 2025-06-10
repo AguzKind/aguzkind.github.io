@@ -75,7 +75,7 @@ const Proyectos = ({ texto, fondo, titular }) => {
             <AiOutlineClose size={24} />
           </button>
         </DialogHeader>
-        <DialogBody className='overflow-y-auto max-h-[80vh] px-4'>
+        <DialogBody className='overflow-y-auto max-h-[80vh] px-4 py-6 sm:py-8 md:py-10'>
           <div className={`${texto} flex flex-col items-center `}>
             <div className="flex justify-center items-center mb-6 px-4">
               <div className="max-w-[800px] max-h-[70vh] w-full h-full">
