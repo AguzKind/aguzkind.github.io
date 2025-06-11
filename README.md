@@ -30,4 +30,6 @@ Podes acceder al mismo por este [link!](https://aguzkind.github.io/)
 
 [04/09/2023]
 - Creación del portfolio.
+
+
 ![logo-am](https://github.com/AguzKind/aguzkind.github.io/assets/105683402/f6e227dd-dc65-452c-8cec-936962e43f96)
