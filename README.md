@@ -12,8 +12,9 @@ Podes acceder al mismo por este [link!](https://aguzkind.github.io/)
 - [Animate-on-scroll (AOS)](https://michalsnik.github.io/aos/)
 - [React-Type-Animation](https://www.npmjs.com/package/react-type-animation)
 
-# 
+
 <h1 align="center"> CHANGELOG </h1>
+
 [11/06/2025]
 - Fixes a botones, texto e imagenes.
 - 2 proyectos agregados: Challenge NVX y WiiGameStore (WIP).
