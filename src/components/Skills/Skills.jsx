@@ -110,7 +110,7 @@ const Skills = ({ fondo, titular }) => {
   ]
   Aos.init();
   return (
-    <div id="skills" className={`${fondo}`}>
+    <div id="skills" className={`${fondo} text-center`}>
       <div className="max-w-[1040px] m-auto p-4 py-16">
         <h1 className={`${titular} text-4xl font-bold text-center mb-7`}>
           TECNOLOGÍAS
