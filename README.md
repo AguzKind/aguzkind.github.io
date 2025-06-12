@@ -14,6 +14,8 @@ Podes acceder al mismo por este [link!](https://aguzkind.github.io/)
 
 
 <h1 align="center"> CHANGELOG </h1>
+[12/06/2025]
+- Nueva Funcionalidad: Posibilidad de cambiar de idioma (EN-ES).
 
 [11/06/2025]
 - Fixes a botones, texto e imagenes.
