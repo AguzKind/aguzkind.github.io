@@ -18,6 +18,7 @@ Podes acceder al mismo por este [link!](https://aguzkind.github.io/)
 [11/06/2025]
 - Fixes a botones, texto e imagenes.
 - 2 proyectos agregados: Challenge NVX y WiiGameStore (WIP).
+- Nuevo EasterEgg agregado.
 
 [11/06/2025]
 - Rediseño de la sección **Pryectos**.
