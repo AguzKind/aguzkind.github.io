@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
 import { FiDownload } from 'react-icons/fi'
 import AOS from 'aos'
-import Translations from '../Data/Translations'
+import Translations from '../data/Translations'
 
 const Intro = ({ fondo, texto, fondoBoton, fondosBotones, estilosTooltips, iconoBotones, language }) => {
     AOS.init();
@@ -50,7 +50,7 @@ const Intro = ({ fondo, texto, fondoBoton, fondosBotones, estilosTooltips, icono
                         </div>
                         <div className='flex flex-col md:flex-row max-w-2 gap-x-1 gap-y-4 items-center mb-12 mx-auto lg:ml-[250px] justify-center px-4'>
                             <a
-                                href="https://drive.google.com/file/d/1kGuaKYQboCR-axEEJEGnwqXgUujW-B4t/view?usp=drive_link"
+                                href={language === 'es' ? "https://drive.google.com/file/d/1wztP8ZqGpCc7RtlzLTqQI-cJHgOeicqG/view?usp=drive_link" : "https://drive.google.com/file/d/16Qz540245QXyE3GoE43xJApNHLoWIAvP/view?usp=drive_link"}
                                 className={`${fondoBoton} w-[250px] md:w-auto rounded-full shadow-md shadow-green-500 m-2 p-4 cursor-pointer font-bold hover:scale-110 duration-300 hover:bg-green-500 flex items-center justify-center gap-2 text-lg`}
                                 target='_blank'
                             >

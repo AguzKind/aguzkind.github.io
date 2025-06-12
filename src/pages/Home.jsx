@@ -110,6 +110,7 @@ const Home = () => {
         toggleNightMode={toggleNightMode}
         toggleLanguage={toggleLanguage}
         language={language}
+        isNightMode={isNightMode}
       />
       <Intro
         fondo={fondo}

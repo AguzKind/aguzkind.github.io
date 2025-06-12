@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { AiFillHome, AiFillCode } from 'react-icons/ai'
 import { RiComputerFill } from 'react-icons/ri'
-import { BsPersonSquare, BsMoonFill } from 'react-icons/bs'
+import { BsPersonSquare, BsMoonFill, BsSunFill } from 'react-icons/bs'
 import { ImMenu } from 'react-icons/im'
 import { MdWorkHistory, MdContacts } from 'react-icons/md'
 import { FaUserGraduate } from 'react-icons/fa'
 import { Tooltip } from "@material-tailwind/react";
 import AOS from 'aos'
 import { motion } from 'framer-motion';
+import Translations from '../data/Translations'
 
-const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburguer, toggleNightMode, toggleLanguage, language }) => {
+const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburguer, toggleNightMode, toggleLanguage, language, isNightMode }) => {
     const [nav, setNav] = useState(false)
     const handleNav = () => {
         setNav(!nav);
@@ -29,55 +30,59 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
                         font-roboto`}>
                             <AiFillHome size={20}
                                 className={iconoBotones} />
-                            <span className={`${iconoBotones} pl-4`}>Inicio</span>
+                            <span className={`${iconoBotones} pl-4`}>{Translations[language].introtitle}</span>
                         </a>
                         <a onClick={handleNav} href="#experiencia" className={`${fondosBotones} w-[75%] flex justify-center items-center rounded-full shadow-md shadow-green-500 m-3 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-green-500 font-bold
                         font-roboto`}>
                             <MdWorkHistory size={20}
                                 className={iconoBotones} />
-                            <span className={`${iconoBotones} pl-4`}>Experiencia Laboral</span>
+                            <span className={`${iconoBotones} pl-4`}>{Translations[language].experienciatitle}</span>
                         </a>
                         <a onClick={handleNav} href="#educacion" className={`${fondosBotones} w-[75%] flex justify-center items-center rounded-full shadow-md shadow-green-500 m-3 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-green-500 font-bold
                         font-roboto`}>
                             <FaUserGraduate size={20}
                                 className={iconoBotones} />
-                            <span className={`${iconoBotones} pl-4`}>Educación, Cursos y Certificados</span>
+                            <span className={`${iconoBotones} pl-4`}>{Translations[language].educationtitle}</span>
                         </a>
                         <a onClick={handleNav} href="#skills" className={`${fondosBotones} w-[75%] flex justify-center items-center rounded-full shadow-md shadow-green-500 m-3 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-green-500 font-bold
                         font-roboto`}>
                             <AiFillCode size={20}
                                 className={iconoBotones} />
-                            <span className={`${iconoBotones} pl-4`}>Tecnologías</span>
+                            <span className={`${iconoBotones} pl-4`}>{Translations[language].skillstitle}</span>
                         </a>
                         <a onClick={handleNav} href="#proyectos" className={`${fondosBotones} w-[75%] flex justify-center items-center rounded-full shadow-md shadow-green-500 m-3 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-green-500 font-bold
                         font-roboto`}>
                             <RiComputerFill size={20}
                                 className={iconoBotones} />
-                            <span className={`${iconoBotones} pl-4`}>Proyectos</span>
+                            <span className={`${iconoBotones} pl-4`}>{Translations[language].proyectstitle}</span>
                         </a>
                         <a onClick={handleNav} href="#sobremi" className={`${fondosBotones} w-[75%] flex justify-center items-center rounded-full shadow-md shadow-green-500 m-3 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-green-500 font-bold
                         font-roboto`}>
                             <BsPersonSquare size={20}
                                 className={iconoBotones} />
-                            <span className={`${iconoBotones} pl-4`}>Sobre Mí</span>
+                            <span className={`${iconoBotones} pl-4`}>{Translations[language].aboutmetitle}</span>
                         </a>
                         <a onClick={handleNav} href="#contacto" className={`${fondosBotones} w-[75%] flex justify-center items-center rounded-full shadow-md shadow-green-500 m-3 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-green-500 font-bold
                         font-roboto`}>
                             <MdContacts size={20}
                                 className={iconoBotones}
                             />
-                            <span className={`${iconoBotones} pl-4`}>Contactame</span>
+                            <span className={`${iconoBotones} pl-4`}>{Translations[language].contactmetitle}</span>
                         </a>
                         <a onClick={() => {
                             toggleNightMode()
                             handleNav()
-                        }} className={`${fondosBotones} w-[75%] flex justify-center items-center rounded-full shadow-md shadow-green-500 m-3 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-green-500 font-bold
-                        font-roboto`}>
-                            <BsMoonFill size={20}
-                                className={iconoBotones}
-                            />
-                            <span className={`${iconoBotones} pl-4`}>Modo Oscuro</span>
+                        }} className={`${fondosBotones} w-[75%] flex justify-center items-center rounded-full shadow-md shadow-green-500 m-3 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-green-500 font-bold font-roboto`}>
+
+                            {
+                                isNightMode
+                                    ? <BsMoonFill size={20} className={iconoBotones} />
+                                    : <BsSunFill size={20} className={iconoBotones} />
+                            }
+
+                            <span className={`${iconoBotones} pl-4`}>{Translations[language].darkmodetitle}</span>
                         </a>
+
                         <a onClick={() => {
                             toggleLanguage()
                             handleNav()
@@ -96,7 +101,7 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
             <div className="md:block hidden fixed md:top-[8%] z-10">
                 <div className='flex flex-col'>
                     {/* Menu Desktop */}
-                    <Tooltip content="Inicio" placement="right" animate={{
+                    <Tooltip content={Translations[language].introtitle} placement="right" animate={{
                         mount: { scale: 1, x: 0 },
                         unmount: { scale: 0, x: -25 },
                     }}
@@ -106,7 +111,7 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
                                 className={iconoBotones} />
                         </a>
                     </Tooltip>
-                    <Tooltip content="Experiencia Laboral" placement="right" animate={{
+                    <Tooltip content={Translations[language].experienciatitle} placement="right" animate={{
                         mount: { scale: 1, x: 0 },
                         unmount: { scale: 0, x: -25 },
                     }}
@@ -116,7 +121,7 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
                                 className={iconoBotones} />
                         </a>
                     </ Tooltip>
-                    <Tooltip content="Educación, Cursos y Certificados" placement="right" animate={{
+                    <Tooltip content={Translations[language].educationtitle} placement="right" animate={{
                         mount: { scale: 1, x: 0 },
                         unmount: { scale: 0, x: -25 },
                     }}
@@ -126,7 +131,7 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
                                 className={iconoBotones} />
                         </a>
                     </ Tooltip>
-                    <Tooltip content="Tecnologías" placement="right" animate={{
+                    <Tooltip content={Translations[language].skillstitle} placement="right" animate={{
                         mount: { scale: 1, x: 0 },
                         unmount: { scale: 0, x: -25 },
                     }}
@@ -137,7 +142,7 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
                         </a>
                     </ Tooltip>
 
-                    <Tooltip content="Proyectos" placement="right" animate={{
+                    <Tooltip content={Translations[language].proyectstitle} placement="right" animate={{
                         mount: { scale: 1, x: 0 },
                         unmount: { scale: 0, x: -25 },
                     }}
@@ -148,7 +153,7 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
                                 className={iconoBotones} />
                         </a>
                     </Tooltip>
-                    <Tooltip content="Sobre Mí" placement="right" animate={{
+                    <Tooltip content={Translations[language].aboutmetitle} placement="right" animate={{
                         mount: { scale: 1, x: 0 },
                         unmount: { scale: 0, x: -25 },
                     }}
@@ -158,7 +163,7 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
                                 className={iconoBotones} />
                         </a>
                     </Tooltip>
-                    <Tooltip content="Contacto" placement="right" animate={{
+                    <Tooltip content={Translations[language].contactmetitle} placement="right" animate={{
                         mount: { scale: 1, x: 0 },
                         unmount: { scale: 0, x: -25 },
                     }}
@@ -168,15 +173,18 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
                                 className={iconoBotones} />
                         </a>
                     </Tooltip>
-                    <Tooltip content="Modo Oscuro" placement="right" animate={{
+                    <Tooltip content={Translations[language].darkmodetitle} placement="right" animate={{
                         mount: { scale: 1, x: 0 },
                         unmount: { scale: 0, x: -25 },
                     }}
                         className={`${estilosTooltips} font-bold font-roboto`}>
                         <a className={`${fondosBotones} rounded-full shadow-md shadow-green-500 m-2 p-4 cursor-pointer hover:scale-110 duration-300 hover:bg-green-500`}
                             onClick={toggleNightMode}>
-                            <BsMoonFill size={20}
-                                className={iconoBotones} />
+                            {
+                                isNightMode
+                                    ? <BsMoonFill size={20} className={iconoBotones} />
+                                    : <BsSunFill size={20} className={iconoBotones} />
+                            }
                         </a>
                     </Tooltip>
                     <Tooltip content="Cambiar idioma" placement="right" animate={{

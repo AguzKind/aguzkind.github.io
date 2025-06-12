@@ -1,5 +1,6 @@
 const Translations = {
     es: {
+        introtitle: "Inicio",
         intro: {
             spandev: 'Desarrollador',
             introdesc: [
@@ -121,6 +122,9 @@ Este curso me permitió consolidar tanto habilidades técnicas esenciales para e
         proyectstitle: "Proyectos",
         skillstitle: "Tecnologías",
         proyectsubtitle: "Click para ver detalles",
+        aboutmetitle: "Sobre mi",
+        contactmetitle: "Contactame",
+        darkmodetitle: "Cambiar modo color",
         aboutme: [
             "Mi nombre completo es Agustín Nicolás Macoggi. Vivo en el partido de San Vicente, provincia de Buenos Aires, Argentina. Soy soltero, tengo 26 años y una gata llamada Asa.",
             "Desde chico juego a videojuegos, y durante mi adolescencia se despertó una curiosidad: '¿Cómo hacen para que esto funcione?'. A los 18 años supe lo que quería hacer: tomar una idea y transformarla en una página web o en un programa.",
@@ -139,6 +143,7 @@ Este curso me permitió consolidar tanto habilidades técnicas esenciales para e
         },
     },
     en: {
+        introtitle: "Home",
         intro: {
             spandev: 'Developer',
             introdesc: [
@@ -255,6 +260,9 @@ This course allowed me to strengthen both essential technical skills for web dev
         proyectstitle: "Projects",
         skillstitle: "Skills",
         proyectsubtitle: "Click to see more details",
+        aboutmetitle: "About me",
+        contactmetitle: "Contact me",
+        darkmodetitle: "Switch color mode",
         aboutme: [
             "My full name is Agustín Nicolás Macoggi. I live in the district of San Vicente, Buenos Aires Province, Argentina. I am single, 26 years old, and I have a cat named Asa.",
             "I have been playing video games since I was a child, and during my teenage years, I developed a curiosity: 'How do they make this work?'. At 18, I knew what I wanted to do: take an idea and turn it into a website or a program.",

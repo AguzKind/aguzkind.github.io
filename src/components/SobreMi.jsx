@@ -1,4 +1,4 @@
-import Translations from '../Data/Translations'
+import Translations from '../data/Translations'
 import AboutMe from '../assets/aboutmelg.png'
 
 const SobreMi = ({ fondo, texto, language }) => {
@@ -14,7 +14,7 @@ const SobreMi = ({ fondo, texto, language }) => {
                         <div className='flex-1 text-center font-roboto'
                             data-aos="fade-down">
 
-                            <p className={`${texto} mb-8 font-semibold text-left`}>
+                            <div className={`${texto} mb-8 font-semibold text-left`}>
                                 {Translations[language].aboutme.map((paragraph, index) => (
                                     <p
                                         key={index}
@@ -23,7 +23,7 @@ const SobreMi = ({ fondo, texto, language }) => {
                                         {paragraph}
                                     </p>
                                 ))}
-                            </p>
+                            </div>
                             <p className={`${texto} mx-14 lg:mx-auto mb-8 font-semibold text-[16px] text-left w-[77%]`}>
                                 {Translations[language].lastaboutme}{' '}
                                 <span className='italic text-green-500'>

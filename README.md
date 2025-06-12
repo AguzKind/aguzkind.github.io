@@ -17,6 +17,9 @@ Podes acceder al mismo por este [link!](https://aguzkind.github.io/)
 
 [12/06/2025]
 - Nueva Funcionalidad: Posibilidad de cambiar de idioma (EN-ES).
+- Cambio de icono en el cambio del modo de color.
+- Fixes en los menues (con la nueva feature del cambio de idioma).
+- Dependiendo del idioma, se cambia el CV.
 
 [11/06/2025]
 - Fixes a botones, texto e imagenes.

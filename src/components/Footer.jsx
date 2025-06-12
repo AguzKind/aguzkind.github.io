@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../assets/logo.png'
-import Translations from '../Data/Translations'
+import Translations from '../data/Translations'
 
 const Footer = ({ language }) => {
   return (
