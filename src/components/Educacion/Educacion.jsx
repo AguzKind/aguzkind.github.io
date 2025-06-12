@@ -7,7 +7,7 @@ const Educacion = ({ fondo, texto, info, certificados, titular, language }) => {
   return (
     <div className={`${fondo}`}>
       <div id="educacion" className="max-w-[1040px] m-auto p-4 py-16">
-        <h1 className={`${titular} text-4xl font-bold text-center mb-7`}>
+        <h1 className={`${titular} text-4xl font-bold text-center mb-7 uppercase`}>
           {Translations[language].educationtitle}
         </h1>
         {educations.map((item, idx) => (
