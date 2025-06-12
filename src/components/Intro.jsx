@@ -1,12 +1,16 @@
-import React from 'react'
+import { useState } from "react"
+import { Tooltip } from "@material-tailwind/react"
 import FotoPerfil from "../assets/profile.png"
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
 import { FiDownload } from 'react-icons/fi'
 import AOS from 'aos'
 
-const Intro = ({ fondo, texto, fondoBoton }) => {
+const Intro = ({ fondo, texto, fondoBoton, fondosBotones, estilosTooltips, iconoBotones }) => {
     AOS.init();
+    const [showTooltip, setShowTooltip] = useState(false);
+
+
     return (
         <section className={`${fondo} min-h-[85vh] lg:min-h-[78vh] flex items-center lg:pl-[7rem]`}
             id="inicio">
@@ -75,8 +79,25 @@ const Intro = ({ fondo, texto, fondoBoton }) => {
                     </div>
                     {/*IMAGEN*/}
                     <div className='lg:flex flex-1 max-w-[400px] lg:max-w-[500px] mx-auto'
-                        data-aos="zoom-in-left">
-                        <img src={FotoPerfil} alt="foto de perfil" className='w-full h-auto lg:w-auto' />
+                        data-aos="zoom-in-left"
+                        onMouseLeave={() => setShowTooltip(false)}>
+                        <Tooltip
+                            content="Probá escribiendo 'aguzkind' !"
+                            open={showTooltip}
+                            placement="top"
+                            animate={{
+                                mount: { scale: 1, y: 50 },
+                                unmount: { scale: 0 },
+                            }}
+                            className={`${estilosTooltips} font-bold font-roboto`}
+                        >
+                            <img
+                                src={FotoPerfil}
+                                alt="foto de perfil"
+                                className="w-full h-auto lg:w-auto cursor-pointer"
+                                onClick={() => setShowTooltip(true)}
+                            />
+                        </Tooltip>
                     </div>
                 </div>
             </div>
