@@ -5,8 +5,9 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
 import { FiDownload } from 'react-icons/fi'
 import AOS from 'aos'
+import Translations from '../Data/Translations'
 
-const Intro = ({ fondo, texto, fondoBoton, fondosBotones, estilosTooltips, iconoBotones }) => {
+const Intro = ({ fondo, texto, fondoBoton, fondosBotones, estilosTooltips, iconoBotones, language }) => {
     AOS.init();
     const [showTooltip, setShowTooltip] = useState(false);
 
@@ -24,7 +25,7 @@ const Intro = ({ fondo, texto, fondoBoton, fondosBotones, estilosTooltips, icono
                             &#47;&#62;
                         </h1>
                         <div className='mb-6 text-[55px] lg:text-[78px] font-roboto font-semibold leading-[1]'>
-                            <span className={`${texto} mr-2`}>Desarrollador <br /></span>
+                            <span className={`${texto} mr-2`}>{Translations[language].intro.spandev} <br /></span>
                             <TypeAnimation
                                 sequence={[
                                     "Fullstack.",
@@ -42,9 +43,9 @@ const Intro = ({ fondo, texto, fondoBoton, fondosBotones, estilosTooltips, icono
 
                         </div>
                         <div className={`${texto} mb-8 w-[90%] mx-auto lg:mx-0 text-[17px] md:w-[80%] sm:w-[70%] text-left`}>
-                            <p className='font-semibold'>Desarrollador Fullstack con experiencia internacional, especializado en React, .NET y SQL.</p>
-                            <p> Estoy enfocado en seguir creciendo profesionalmente y aportar valor en nuevos entornos donde pueda aplicar mis conocimientos en desarrollo, asumir nuevos desafíos y continuar aprendiendo. </p>
-                            <p>Me comprometo con la creación de soluciones escalables, eficientes e innovadoras.</p>
+                            <p className='font-semibold'>{Translations[language].intro.introdesc[0]} </p>
+                            <p> {Translations[language].intro.introdesc[1]}</p>
+                            <p>{Translations[language].intro.introdesc[2]}</p>
 
                         </div>
                         <div className='flex flex-col md:flex-row max-w-2 gap-x-1 gap-y-4 items-center mb-12 mx-auto lg:ml-[250px] justify-center px-4'>
@@ -54,7 +55,7 @@ const Intro = ({ fondo, texto, fondoBoton, fondosBotones, estilosTooltips, icono
                                 target='_blank'
                             >
                                 <section className={`${texto} flex items-center gap-2`}>
-                                    Currículum <FiDownload />
+                                    {Translations[language].intro.cv} <FiDownload />
                                 </section>
                             </a>
                             <a

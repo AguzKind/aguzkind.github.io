@@ -14,10 +14,11 @@ import GitHubImg from '../../assets/skills/github.svg'
 import PostmanImg from '../../assets/skills/postman.svg'
 import CodeImg from '../../assets/skills/visualcode.png'
 import StudioImg from '../../assets/skills/visual2022.png'
+import Translations from '../../Data/Translations'
 
 import Aos from 'aos'
 
-const Skills = ({ fondo, titular }) => {
+const Skills = ({ fondo, titular, language }) => {
   const front = [
     {
       nombre: "React",
@@ -112,8 +113,8 @@ const Skills = ({ fondo, titular }) => {
   return (
     <div id="skills" className={`${fondo} text-center`}>
       <div className="max-w-[1040px] m-auto p-4 py-16">
-        <h1 className={`${titular} text-4xl font-bold text-center mb-7`}>
-          TECNOLOGÍAS
+        <h1 className={`${titular} text-4xl font-bold text-center mb-7 uppercase`}>
+          {Translations[language].skillstitle}
         </h1>
       </div>
       <div className='lg:mx-[150px] ml-[15%] grid grid-rows-1 gap-8 lg:flex' data-aos="flip-up" data-aos-duration="6000">

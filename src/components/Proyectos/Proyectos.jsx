@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Dialog, DialogHeader, DialogBody } from '@material-tailwind/react'
 import { AiOutlineClose } from 'react-icons/ai'
 import { FaGithub } from 'react-icons/fa'
 import { TiExport } from "react-icons/ti"
-import ProyectosData from '../../Data/ProyectosData.jsx'
+import { ProyectosDataEs, ProyectosDataEn } from '../../Data/ProyectosData.jsx';
 import ProyectosModelo from './ProyectosModelo.jsx'
+import Translations from '../../Data/Translations.js'
 
-const Proyectos = ({ texto, fondo, titular }) => {
+const Proyectos = ({ texto, fondo, titular, language }) => {
+
+  const ProyectosData = language === 'es' ? ProyectosDataEs : ProyectosDataEn;
+
   const [selectedProject, setSelectedProject] = useState(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -39,8 +43,8 @@ const Proyectos = ({ texto, fondo, titular }) => {
   return (
     <div className={`${fondo}`}>
       <div id="proyectos" className='md:max-w-[85%] md:ml-[7%] py-32'>
-        <h1 className={`${titular} text-4xl font-bold text-center mb-7`}>
-          PROYECTOS
+        <h1 className={`${titular} text-4xl font-bold text-center mb-7 uppercase`}>
+          {Translations[language].proyectstitle}
         </h1>
 
         {/* Grid de proyectos */}
@@ -51,6 +55,7 @@ const Proyectos = ({ texto, fondo, titular }) => {
               img={project.img}
               titulo={project.titulo}
               onClick={() => openModal(project)}
+              language={language}
             />
           ))}
         </div>
@@ -59,7 +64,7 @@ const Proyectos = ({ texto, fondo, titular }) => {
       {isModalOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40 animate-fade-in"
-          onClick={closeModal} // opcional
+          onClick={closeModal}
         ></div>
       )}
       {/* Modal (Dialog) */}
@@ -113,7 +118,7 @@ const Proyectos = ({ texto, fondo, titular }) => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg text-lg font-medium hover:bg-gray-700 transition-colors duration-300 w-[300px] sm:w-auto"
               >
-                <FaGithub /> Ver Repo
+                <FaGithub /> Repo
               </a>
 
               {selectedProject?.linkDemo ? (
@@ -123,14 +128,14 @@ const Proyectos = ({ texto, fondo, titular }) => {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg text-lg font-medium hover:bg-green-500 transition-colors duration-300 w-[300px] sm:w-auto"
                 >
-                  <TiExport /> Probar Demo
+                  <TiExport /> Demo
                 </a>
               ) : (
                 <button
                   disabled
                   className="flex items-center justify-center gap-2 px-4 py-2 bg-gray-300 text-gray-500 rounded-lg text-lg font-medium cursor-not-allowed w-[300px] sm:w-auto"
                 >
-                  <TiExport /> Probar Demo
+                  <TiExport /> Demo
                 </button>
               )}
             </div>

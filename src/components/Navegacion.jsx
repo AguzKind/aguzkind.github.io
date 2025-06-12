@@ -9,7 +9,7 @@ import { Tooltip } from "@material-tailwind/react";
 import AOS from 'aos'
 import { motion } from 'framer-motion';
 
-const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburguer, toggleNightMode }) => {
+const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburguer, toggleNightMode, toggleLanguage, language }) => {
     const [nav, setNav] = useState(false)
     const handleNav = () => {
         setNav(!nav);
@@ -20,7 +20,7 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
             <ImMenu onClick={handleNav} className={`${iconoBotones} fixed top-4 right-6 z-[99] md:hidden bg-green-500 p-2 rounded-md hover:scale-110 cursor-pointer ease-in duration-200`} size={50} />
             {
                 nav ? ( /*Menu Celular*/
-                    <motion.div id="hamburguer" className={`${fondoHamburguer} fixed w-full h-screen flex flex-col justify-center items-center z-20 font-roboto ease-in duration-300 `}
+                    <motion.div id="hamburguer" className={`${fondoHamburguer} text-center fixed w-full h-screen flex flex-col justify-center items-center z-20 font-roboto ease-in duration-300 `}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5 }}
@@ -68,12 +68,26 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
                             />
                             <span className={`${iconoBotones} pl-4`}>Contactame</span>
                         </a>
-                        <a onClick={toggleNightMode} className={`${fondosBotones} w-[75%] flex justify-center items-center rounded-full shadow-md shadow-green-500 m-3 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-green-500 font-bold
+                        <a onClick={() => {
+                            toggleNightMode()
+                            handleNav()
+                        }} className={`${fondosBotones} w-[75%] flex justify-center items-center rounded-full shadow-md shadow-green-500 m-3 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-green-500 font-bold
                         font-roboto`}>
                             <BsMoonFill size={20}
                                 className={iconoBotones}
                             />
                             <span className={`${iconoBotones} pl-4`}>Modo Oscuro</span>
+                        </a>
+                        <a onClick={() => {
+                            toggleLanguage()
+                            handleNav()
+                        }} className={`${fondosBotones} w-[75%] flex justify-center items-center rounded-full shadow-md shadow-green-500 m-3 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-green-500 font-bold font-roboto`}>
+                            <span className={`${iconoBotones} text-2xl`}>
+                                {language === 'es' ? 'EN' : 'ES'}
+                            </span>
+                            <span className={`${iconoBotones} pl-4`}>
+                                {language === 'es' ? 'Change to English' : 'Cambiar a Español'}
+                            </span>
                         </a>
                     </motion.div>
                 ) : (
@@ -163,6 +177,16 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
                             onClick={toggleNightMode}>
                             <BsMoonFill size={20}
                                 className={iconoBotones} />
+                        </a>
+                    </Tooltip>
+                    <Tooltip content="Cambiar idioma" placement="right" animate={{
+                        mount: { scale: 1, x: 0 },
+                        unmount: { scale: 0, x: -25 },
+                    }}
+                        className={`${estilosTooltips} font-bold font-roboto`}>
+                        <a className={`${fondosBotones} rounded-full shadow-md shadow-green-500 m-2 p-2 cursor-pointer hover:scale-110 duration-300 hover:bg-green-500 ${iconoBotones} font-bold text-center`}
+                            onClick={toggleLanguage}>
+                            {language === 'es' ? 'EN' : 'ES'}
                         </a>
                     </Tooltip>
                 </div>

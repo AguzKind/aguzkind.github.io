@@ -1,7 +1,8 @@
 import { GiClick } from "react-icons/gi";
+import Translations from "../../Data/Translations";
 
 
-const ProyectosModelo = ({ img, titulo, onClick }) => {
+const ProyectosModelo = ({ img, titulo, onClick, language }) => {
   return (
     <div
       data-aos="fade-up"
@@ -27,7 +28,7 @@ const ProyectosModelo = ({ img, titulo, onClick }) => {
         <h1 className='text-white text-5xl font-bold mb-2 uppercase'>{titulo}</h1>
         <div className="text-white text-3xl flex flex-row gap-3">
           <GiClick />
-          <p className='text-white text-xl'> Click para ver detalles</p>
+          <p className='text-white text-xl'>{Translations[language].proyectsubtitle}</p>
 
         </div>
 

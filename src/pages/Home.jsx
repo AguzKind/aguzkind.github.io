@@ -18,6 +18,12 @@ const Home = () => {
   const [isEasterEggOpen, setIsEasterEggOpen] = useState(false);
   const [typedKeys, setTypedKeys] = useState('');
 
+  const [language, setLanguage] = useState('es');
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'es' ? 'en' : 'es');
+  };
+
 
   const toggleNightMode = () => {
     setIsNightMode(prevMode => !prevMode);
@@ -101,7 +107,10 @@ const Home = () => {
         iconoBotones={iconoBotones}
         estilosTooltips={estiloTooltips}
         fondoHamburguer={fondoHamburguer}
-        toggleNightMode={toggleNightMode} />
+        toggleNightMode={toggleNightMode}
+        toggleLanguage={toggleLanguage}
+        language={language}
+      />
       <Intro
         fondo={fondo}
         texto={iconoBotones}
@@ -109,12 +118,14 @@ const Home = () => {
         fondosBotones={fondosBotones}
         estilosTooltips={estiloTooltips}
         iconoBotones={iconoBotones}
+        language={language}
       />
       <Experiencia
         fondo={fondo}
         texto={iconoBotones}
         info={info}
         titular={titular}
+        language={language}
 
       />
       <Educacion
@@ -123,22 +134,26 @@ const Home = () => {
         info={info}
         certificados={certificados}
         titular={titular}
+        language={language}
       />
       <Skills
         fondo={fondo}
         texto={iconoBotones}
         titular={titular}
+        language={language}
       />
 
       <Proyectos
         texto={iconoBotones}
         fondo={fondo}
         titular={titular}
+        language={language}
       />
 
       <SobreMi
         fondo={fondo}
         texto={iconoBotones}
+        language={language}
       />
 
       < Contacto
@@ -146,9 +161,11 @@ const Home = () => {
         texto={iconoBotones}
         fondoBoton={fondosBotones}
         titular={titular}
+        language={language}
       />
 
       <Footer
+        language={language}
       />
     </>
   )

@@ -29,7 +29,7 @@ import WiiGameSToreIMG from '../assets/proyects/WiiGameStore.webp'
 
 
 
-const ProyectosData = [
+const ProyectosDataEs = [
     {
         id: 1,
         img: PortfolioIMG,
@@ -229,4 +229,203 @@ const ProyectosData = [
     },
 ];
 
-export default ProyectosData
+const ProyectosDataEn = [
+    {
+        id: 1,
+        img: PortfolioIMG,
+        titulo: "Portfolio",
+        descripcion: "Personal portfolio where I showcase my professional background, education, projects, etc. Personal and self-taught project.",
+        linkRepo: "https://github.com/AguzKind/aguzkind.github.io",
+        linkDemo: "https://aguzkind.dev.ar",
+        tags: [
+            { name: "Vite", icon: <SiVitest />, colorClass: "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-900" },
+            { name: "HTML", icon: <FaHtml5 />, colorClass: "bg-gradient-to-r from-orange-100 to-orange-200 text-orange-900" },
+            { name: "Javascript", icon: <IoLogoJavascript />, colorClass: "bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-900" },
+            { name: "React", icon: <FaReact />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
+            { name: "TailwindCSS", icon: <RiTailwindCssFill />, colorClass: "bg-gradient-to-r from-cyan-100 to-cyan-200 text-cyan-900" },
+            { name: "Material Tailwind/React", icon: <SiMaterialformkdocs />, colorClass: "bg-gradient-to-r from-pink-100 to-pink-200 text-pink-900" },
+            { name: "Animation-on-Scroll", icon: <MdAnimation />, colorClass: "bg-gradient-to-r from-teal-100 to-teal-200 text-teal-900" },
+            { name: "React-Type-Animation", icon: <BsTypeItalic />, colorClass: "bg-black text-white" },
+            { name: "Visual Studio Code", icon: <BiLogoVisualStudio />, colorClass: "bg-gradient-to-r from-blue-200 to-blue-300 text-blue-900" },
+            { name: "Github", icon: <FaGithub />, colorClass: "bg-white text-black" },
+        ]
+    },
+    {
+        id: 2,
+        img: ChallengeTDevsIMG,
+        titulo: "Challenge TDevs",
+        descripcion: "Technical challenge completed for the company TogetherDevs. Full project (Frontend, REST API creation, ORM usage, database) simulating a product stock manager. Includes JWT for user authentication. Installation/debugging instructions inside the repository.",
+        linkRepo: "https://github.com/AguzKind/ChallengeTDevs",
+        linkDemo: "",
+        tags: [
+            { name: "Vite", icon: <SiVitest />, colorClass: "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-900" },
+            { name: "HTML", icon: <FaHtml5 />, colorClass: "bg-gradient-to-r from-orange-100 to-orange-200 text-orange-900" },
+            { name: "Javascript", icon: <IoLogoJavascript />, colorClass: "bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-900" },
+            { name: "React", icon: <FaReact />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
+            { name: "TailwindCSS", icon: <RiTailwindCssFill />, colorClass: "bg-gradient-to-r from-cyan-100 to-cyan-200 text-cyan-900" },
+            { name: "C#", icon: <SiDotnet />, colorClass: "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-900" },
+            { name: "ASP.NET", icon: <DiDotnet />, colorClass: "bg-gradient-to-r from-indigo-100 to-blue-100 text-indigo-900" },
+            { name: "Entity Framework", icon: <LuCircleFadingPlus />, colorClass: "bg-gradient-to-r from-green-100 to-green-200 text-green-900" },
+            { name: "SQL Server", icon: <FaDatabase />, colorClass: "bg-gradient-to-r from-red-100 to-red-200 text-red-900" },
+            { name: "Postman", icon: <SiPostman />, colorClass: "bg-gradient-to-r from-orange-200 to-orange-300 text-orange-900" },
+            { name: "Swagger", icon: <SiSwagger />, colorClass: "bg-gradient-to-r from-green-100 to-green-200 text-green-900" },
+            { name: "Visual Studio", icon: <BiLogoVisualStudio />, colorClass: "bg-gradient-to-r from-indigo-100 to-indigo-300 text-indigo-900" },
+            { name: "Visual Studio Code", icon: <BiLogoVisualStudio />, colorClass: "bg-gradient-to-r from-blue-200 to-blue-300 text-blue-900" },
+            { name: "Github", icon: <FaGithub />, colorClass: "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900" },
+
+
+        ]
+    },
+    {
+        id: 3,
+        img: ChallengeNVXIMG,
+        titulo: "Challenge NVX",
+        descripcion: "Technical challenge completed for the company NVX. API project that allows user registration and retrieval. Includes encryption algorithm and unit tests. Installation/debugging instructions inside the repository.",
+        linkRepo: "https://github.com/AguzKind/ChallengeGaia",
+        linkDemo: "",
+        tags: [
+            { name: "C#", icon: <SiDotnet />, colorClass: "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-900" },
+            { name: "ASP.NET", icon: <DiDotnet />, colorClass: "bg-gradient-to-r from-indigo-100 to-blue-100 text-indigo-900" },
+            { name: "LinQ", icon: <TbBrandLinqpad />, colorClass: "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-900" },
+            { name: "Swagger", icon: <SiSwagger />, colorClass: "bg-gradient-to-r from-green-100 to-green-200 text-green-900" },
+            { name: "Github", icon: <FaGithub />, colorClass: "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900" },
+
+
+
+
+        ]
+    },
+    {
+        id: 4,
+        img: CrudEmpleadosIMG,
+        titulo: "Employees CRUD",
+        descripcion: "Simple employees CRUD for a factory. Exercise completed to reinforce theoretical knowledge.",
+        linkRepo: "https://github.com/AguzKind/CRUD-ASP.NET",
+        linkDemo: "",
+        tags: [
+            { name: "ASP.NET", icon: <DiDotnet />, colorClass: "bg-gradient-to-r from-indigo-100 to-blue-100 text-indigo-900" },
+            { name: "Bootstrap", icon: <FaBootstrap />, colorClass: "bg-gradient-to-r from-indigo-100 to-indigo-200 text-indigo-900" },
+            { name: "Entity Framework", icon: <LuCircleFadingPlus />, colorClass: "bg-gradient-to-r from-green-100 to-green-200 text-green-900" },
+            { name: "SQL Server", icon: <FaDatabase />, colorClass: "bg-gradient-to-r from-red-100 to-red-200 text-red-900" },
+            { name: "Postman", icon: <SiPostman />, colorClass: "bg-gradient-to-r from-orange-200 to-orange-300 text-orange-900" },
+            { name: "Visual Studio", icon: <BiLogoVisualStudio />, colorClass: "bg-gradient-to-r from-indigo-100 to-indigo-300 text-indigo-900" },
+            { name: "Github", icon: <FaGithub />, colorClass: "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900" },
+
+
+        ]
+    },
+    {
+        id: 5,
+        img: VeterinariaIMG,
+        titulo: "Veterinary Web App",
+        descripcion: "Patient tracking web app for a fictional veterinary clinic. First project completed as part of self-taught React learning.",
+        linkRepo: "https://github.com/AguzKind/citas_veterinaria",
+        linkDemo: "https://vet-react-demo.netlify.app/",
+        tags: [
+            { name: "Vite", icon: <SiVitest />, colorClass: "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-900" },
+            { name: "HTML", icon: <FaHtml5 />, colorClass: "bg-gradient-to-r from-orange-100 to-orange-200 text-orange-900" },
+            { name: "Javascript", icon: <IoLogoJavascript />, colorClass: "bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-900" },
+            { name: "React", icon: <FaReact />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
+            { name: "TailwindCSS", icon: <RiTailwindCssFill />, colorClass: "bg-gradient-to-r from-cyan-100 to-cyan-200 text-cyan-900" },
+            { name: "Visual Studio Code", icon: <BiLogoVisualStudio />, colorClass: "bg-gradient-to-r from-blue-200 to-blue-300 text-blue-900" },
+            { name: "Github", icon: <FaGithub />, colorClass: "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900" },
+
+        ]
+    },
+    {
+        id: 6,
+        img: ConversorCriptoIMG,
+        titulo: "Crypto Converter",
+        descripcion: "Web app to convert between currency and cryptocurrencies. Second project completed as part of self-taught React learning and first project using a REST API.",
+        linkRepo: "https://github.com/AguzKind/Conversor-cripto",
+        linkDemo: "https://conversor-cripto.netlify.app/",
+        tags: [
+            { name: "Vite", icon: <SiVitest />, colorClass: "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-900" },
+            { name: "HTML", icon: <FaHtml5 />, colorClass: "bg-gradient-to-r from-orange-100 to-orange-200 text-orange-900" },
+            { name: "CSS3", icon: <FaCss3Alt />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
+            { name: "Javascript", icon: <IoLogoJavascript />, colorClass: "bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-900" },
+            { name: "React", icon: <FaReact />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
+            { name: "Visual Studio Code", icon: <BiLogoVisualStudio />, colorClass: "bg-gradient-to-r from-blue-200 to-blue-300 text-blue-900" },
+            { name: "Github", icon: <FaGithub />, colorClass: "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900" },
+
+        ]
+    },
+    {
+        id: 7,
+        img: ToDoListIMG,
+        titulo: "To-Do List",
+        descripcion: "Task list app that uses localStorage to save entered tasks. Practice project.",
+        linkRepo: "https://github.com/AguzKind/listadetareas",
+        linkDemo: "https://aguzkind.github.io/listadetareas/",
+        tags: [
+            { name: "HTML", icon: <FaHtml5 />, colorClass: "bg-gradient-to-r from-orange-100 to-orange-200 text-orange-900" },
+            { name: "CSS3", icon: <FaCss3Alt />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
+            { name: "Javascript", icon: <IoLogoJavascript />, colorClass: "bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-900" },
+            { name: "Visual Studio Code", icon: <BiLogoVisualStudio />, colorClass: "bg-gradient-to-r from-blue-200 to-blue-300 text-blue-900" },
+            { name: "Github", icon: <FaGithub />, colorClass: "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900" },
+        ]
+    },
+    {
+        id: 8,
+        img: AgendaIglesiaIMG,
+        titulo: "Church Agenda",
+        descripcion: "Agenda-type application (CRUD) for use by the San Vicente Parish. Manages the usage of various facilities and allows agendas/requests to be printed. Installation/debugging instructions inside the repository.",
+        linkRepo: "https://github.com/AguzKind/ProgramaIglesia",
+        linkDemo: "",
+        tags: [
+            { name: "C#", icon: <SiDotnet />, colorClass: "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-900" },
+            { name: "WinForms", icon: <FaWindows />, colorClass: "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900" },
+            { name: "Visual Studio", icon: <DiVisualstudio />, colorClass: "bg-gradient-to-r from-indigo-100 to-indigo-300 text-indigo-900" },
+            { name: "SQL Server (Access)", icon: <FaDatabase />, colorClass: "bg-gradient-to-r from-red-100 to-red-200 text-red-900" },
+        ]
+    },
+    {
+        id: 9,
+        img: GeneralaIMG,
+        titulo: "Dice Game",
+        descripcion: "Dice game for PC. The player with the highest score wins. Option to save scores to a database. Installation/debugging instructions inside the repository.",
+        linkRepo: "https://github.com/AguzKind/JuegoDados",
+        linkDemo: "",
+        tags: [
+            { name: "C#", icon: <SiDotnet />, colorClass: "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-900" },
+            { name: "WinForms", icon: <FaWindows />, colorClass: "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900" },
+            { name: "Visual Studio", icon: <DiVisualstudio />, colorClass: "bg-gradient-to-r from-indigo-100 to-indigo-300 text-indigo-900" },
+            { name: "SQL Server (Access)", icon: <FaDatabase />, colorClass: "bg-gradient-to-r from-red-100 to-red-200 text-red-900" },
+        ]
+    },
+    {
+        id: 10,
+        img: GymTrackerIMG,
+        titulo: "GYM Tracker",
+        descripcion: "[WIP] Application that allows personal weight tracking and progress monitoring. Installation/debugging instructions inside the repository.",
+        linkRepo: "https://github.com/AguzKind/JuegoDados",
+        linkDemo: "",
+        tags: [
+            { name: "C#", icon: <SiDotnet />, colorClass: "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-900" },
+            { name: "WinForms", icon: <FaWindows />, colorClass: "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900" },
+            { name: "Visual Studio", icon: <DiVisualstudio />, colorClass: "bg-gradient-to-r from-indigo-100 to-indigo-300 text-indigo-900" },
+            { name: "SQL Server", icon: <FaDatabase />, colorClass: "bg-gradient-to-r from-red-100 to-red-200 text-red-900" },
+            { name: "Github", icon: <FaGithub />, colorClass: "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900" },
+        ]
+    },
+    {
+        id: 11,
+        img: WiiGameSToreIMG,
+        titulo: "Wii Games Store",
+        descripcion: "[WIP] Web page simulating an online store for physical Nintendo Wii games. Includes shopping cart and HTTP request handling.",
+        linkRepo: "https://github.com/AguzKind",
+        linkDemo: "",
+        tags: [
+            { name: "Vite", icon: <SiVitest />, colorClass: "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-900" },
+            { name: "HTML", icon: <FaHtml5 />, colorClass: "bg-gradient-to-r from-orange-100 to-orange-200 text-orange-900" },
+            { name: "Javascript", icon: <IoLogoJavascript />, colorClass: "bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-900" },
+            { name: "React", icon: <FaReact />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
+            { name: "TailwindCSS", icon: <RiTailwindCssFill />, colorClass: "bg-gradient-to-r from-cyan-100 to-cyan-200 text-cyan-900" },
+            { name: "Typescript", icon: <SiTypescript />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
+            { name: "Axios", icon: <SiAxios />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
+            { name: "Visual Studio Code", icon: <BiLogoVisualStudio />, colorClass: "bg-gradient-to-r from-blue-200 to-blue-300 text-blue-900" },
+            { name: "Github", icon: <FaGithub />, colorClass: "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900" },
+        ]
+    },
+];
+export { ProyectosDataEs, ProyectosDataEn }
