@@ -21,7 +21,8 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
             <ImMenu onClick={handleNav} className={`${iconoBotones} fixed top-4 right-6 z-[99] md:hidden bg-green-500 p-2 rounded-md hover:scale-110 cursor-pointer ease-in duration-200`} size={50} />
             {
                 nav ? ( /*Menu Celular*/
-                    <motion.div id="hamburguer" className={`${fondoHamburguer} text-center fixed w-full h-screen flex flex-col justify-center items-center z-20 font-roboto ease-in duration-300 `}
+                    <motion.div id="hamburguer"
+                        className={`${fondoHamburguer} text-center fixed top-0 left-0 w-full min-h-screen overflow-y-auto flex flex-col justify-center items-center z-20 font-roboto ease-in duration-300 px-4 py-6`}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5 }}
@@ -187,7 +188,7 @@ const Navegacion = ({ fondosBotones, iconoBotones, estilosTooltips, fondoHamburg
                             }
                         </a>
                     </Tooltip>
-                    <Tooltip content="Cambiar idioma" placement="right" animate={{
+                    <Tooltip content={Translations[language].changelanguagetitle} placement="right" animate={{
                         mount: { scale: 1, x: 0 },
                         unmount: { scale: 0, x: -25 },
                     }}
