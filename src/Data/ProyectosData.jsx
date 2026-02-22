@@ -9,6 +9,7 @@ import { DiDotnet, DiVisualstudio } from "react-icons/di"
 import { LuCircleFadingPlus } from "react-icons/lu"
 import { TbBrandLinqpad } from "react-icons/tb"
 import { SiAxios, SiTypescript } from "react-icons/si"
+import { BsCursorFill } from "react-icons/bs";
 
 import PortfolioIMG from '../assets/proyects/Portfolio.webp'
 import AgendaIglesiaIMG from '../assets/proyects/Agenda_iglesia.webp'
@@ -20,7 +21,7 @@ import ToDoListIMG from '../assets/proyects/ToDo_list.webp'
 import VeterinariaIMG from '../assets/proyects/Veterinaria.webp'
 import ChallengeTDevsIMG from '../assets/proyects/Challenge_TDevs.webp'
 import ChallengeNVXIMG from '../assets/proyects/Challenge_NVX.webp'
-import WiiGameSToreIMG from '../assets/proyects/WiiGameStore.webp'
+import ContadorTruco from '../assets/proyects/Contador_truco.webp'
 
 
 
@@ -210,20 +211,18 @@ const ProyectosDataEs = [
     },
     {
         id: 11,
-        img: WiiGameSToreIMG,
-        titulo: "Wii Games Store",
-        descripcion: "[WIP] Página web que simula una tienda online de juegos físicos para la consola Nintendo Wii. Incluye carrito de compra y uso de peticiones HTTP.",
-        linkRepo: "https://github.com/AguzKind",
-        linkDemo: "",
+        img: ContadorTruco,
+        titulo: "Contador de Truco",
+        descripcion: "Pagina web para contar puntos en el juego de truco. Proyecto realizado para comprender el IDE de Cursor.",
+        linkRepo: "https://github.com/AguzKind/contador-truco",
+        linkDemo: "https://contadortruco.dev.ar",
         tags: [
             { name: "Vite", icon: <SiVitest />, colorClass: "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-900" },
             { name: "HTML", icon: <FaHtml5 />, colorClass: "bg-gradient-to-r from-orange-100 to-orange-200 text-orange-900" },
             { name: "Javascript", icon: <IoLogoJavascript />, colorClass: "bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-900" },
             { name: "React", icon: <FaReact />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
             { name: "TailwindCSS", icon: <RiTailwindCssFill />, colorClass: "bg-gradient-to-r from-cyan-100 to-cyan-200 text-cyan-900" },
-            { name: "Typescript", icon: <SiTypescript />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
-            { name: "Axios", icon: <SiAxios />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
-            { name: "Visual Studio Code", icon: <BiLogoVisualStudio />, colorClass: "bg-gradient-to-r from-blue-200 to-blue-300 text-blue-900" },
+            { name: "Cursor", icon: <BsCursorFill  />, colorClass: "bg-gradient-to-r from-greay-200 to-gray-300 text-white-900" },
             { name: "Github", icon: <FaGithub />, colorClass: "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900" },
         ]
     },
@@ -410,20 +409,18 @@ const ProyectosDataEn = [
     },
     {
         id: 11,
-        img: WiiGameSToreIMG,
-        titulo: "Wii Games Store",
-        descripcion: "[WIP] Web page simulating an online store for physical Nintendo Wii games. Includes shopping cart and HTTP request handling.",
-        linkRepo: "https://github.com/AguzKind",
-        linkDemo: "",
+        img: ContadorTruco,
+        titulo: "Truco Counter",
+        descripcion: "Web app to count points in the Argentine truco game. Project completed to understand the Cursor IDE.",
+        linkRepo: "https://github.com/AguzKind/contador-truco",
+        linkDemo: "https://contadortruco.dev.ar",
         tags: [
             { name: "Vite", icon: <SiVitest />, colorClass: "bg-gradient-to-r from-purple-100 to-purple-200 text-purple-900" },
             { name: "HTML", icon: <FaHtml5 />, colorClass: "bg-gradient-to-r from-orange-100 to-orange-200 text-orange-900" },
             { name: "Javascript", icon: <IoLogoJavascript />, colorClass: "bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-900" },
             { name: "React", icon: <FaReact />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
             { name: "TailwindCSS", icon: <RiTailwindCssFill />, colorClass: "bg-gradient-to-r from-cyan-100 to-cyan-200 text-cyan-900" },
-            { name: "Typescript", icon: <SiTypescript />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
-            { name: "Axios", icon: <SiAxios />, colorClass: "bg-gradient-to-r from-blue-100 to-blue-200 text-blue-900" },
-            { name: "Visual Studio Code", icon: <BiLogoVisualStudio />, colorClass: "bg-gradient-to-r from-blue-200 to-blue-300 text-blue-900" },
+            { name: "Cursor", icon: <BsCursorFill  />, colorClass: "bg-gradient-to-r from-greay-200 to-gray-300 text-white-900" },
             { name: "Github", icon: <FaGithub />, colorClass: "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900" },
         ]
     },

@@ -14,6 +14,7 @@ import GitHubImg from '../../assets/skills/github.svg'
 import PostmanImg from '../../assets/skills/postman.svg'
 import CodeImg from '../../assets/skills/visualcode.png'
 import StudioImg from '../../assets/skills/visual2022.png'
+import CursorImg from '../../assets/skills/cursor.png'
 import Translations from '../../Data/Translations'
 
 import Aos from 'aos'
@@ -107,6 +108,12 @@ const Skills = ({ fondo, titular, language }) => {
       img: StudioImg,
       sombra: "shadow-purple-500",
       link: "https://visualstudio.microsoft.com/es/vs/",
+    },
+    {
+      nombre: "Cursor",
+      img: CursorImg,
+      sombra: "shadow-gray-500",
+      link: "https://www.cursor.com/",
     },
   ]
   Aos.init();
